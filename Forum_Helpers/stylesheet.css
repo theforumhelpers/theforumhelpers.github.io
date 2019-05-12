@@ -3,8 +3,10 @@
 }
 img {
 	float: left;
-  border-radius: 10px;
+  	border-radius: 10px;
 	margin-right: 10px;
+	height: 60px;
+  	width: 60px;
 	}
 .bio {
 	margin-right: 400px;
