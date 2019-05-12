@@ -10,12 +10,14 @@ header {
 	padding: 4px;
 	}
 .hbutton {
+	border: none;
 	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
 	transition-duration: 0.4s;
-	width: 100px;
-	padding: 27px 0px;
+	width: 200px;
+	height: 70px;
+	float: right;
 	}
 .hbutton:hover {
 	background-color: #056472;
