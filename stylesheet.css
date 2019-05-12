@@ -18,6 +18,9 @@ header {
 	width: 200px;
 	height: 70px;
 	float: right;
+	text-decoration: none;
+	margin-top: 45px;
+	text-align: center;
 	}
 .hbutton:hover {
 	background-color: #056472;
