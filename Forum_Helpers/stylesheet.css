@@ -6,6 +6,9 @@ header {
 	width: 100%;
 	height: 70px;
 	}
+#home{
+	padding: 4px;
+	}
 .username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
