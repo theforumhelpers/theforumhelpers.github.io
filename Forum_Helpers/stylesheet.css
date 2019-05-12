@@ -9,6 +9,17 @@ header {
 #home {
 	padding: 4px;
 	}
+.hbutton {
+	color: white;
+	background-color: #31ACBA;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	width: 100px;
+	padding: 27px 0px;
+	}
+.hbutton:hover {
+	background-color: #056472;
+	}
 .username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
