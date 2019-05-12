@@ -1,6 +1,6 @@
 .username {
 	font-family: Comfortaa, "Comic Sans MS", serif;
-}
+	}
 img {
 	float: left;
   	border-radius: 10px;
@@ -9,7 +9,8 @@ img {
   	width: 60px;
 	}
 .bio {
-	margin-right: 400px;
+	margin-right: 350px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
 	}	
  
