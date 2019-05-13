@@ -1,4 +1,5 @@
-header {
+/*navbar*/
+.navbar {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -7,6 +8,7 @@ header {
 	}
 #home {
 	padding: 3px;
+	float: left;
 	}
 .hbutton {
 	color: white;
@@ -14,14 +16,22 @@ header {
 	font-size: 16px;
 	transition-duration: 0.4s;
 	padding: 25px 5px 25px 5px;
-	float: right;
 	text-decoration: none;
 	text-align: center;
-	display: block;
+	float: right;
 	}
 .hbutton:hover {
 	background-color: #056472;
 	}
+#t {
+	float: left;
+	color: white;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-left: 20px;
+	}
+/*navbar*/
+/*Forum Helpers List*/
 .username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
@@ -40,4 +50,4 @@ header {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	}	
- 
+ /*Forum Helpers List*/
