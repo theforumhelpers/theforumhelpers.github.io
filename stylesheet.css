@@ -1,5 +1,4 @@
 header {
-	padding: 2px;
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -10,13 +9,11 @@ header {
 	padding: 4px;
 	}
 .hbutton {
-	border: none;
 	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
 	transition-duration: 0.4s;
-	width: 200px;
-	height: 70px;
+	padding: 27px 5px 27px 5px;
 	float: right;
 	text-decoration: none;
 	text-align: center;
