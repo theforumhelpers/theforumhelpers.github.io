@@ -1,5 +1,4 @@
 header {
-	padding: 2px;
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -7,17 +6,18 @@ header {
 	height: 70px;
 	}
 #home {
-	padding: 4px;
+	padding: 3px;
 	}
 .hbutton {
-	border: none;
 	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
 	transition-duration: 0.4s;
-	width: 200px;
-	height: 70px;
+	padding: 25px 5px 25px 5px;
 	float: right;
+	text-decoration: none;
+	text-align: center;
+	display: block;
 	}
 .hbutton:hover {
 	background-color: #056472;
