@@ -67,6 +67,16 @@
 .FHPContent {
 	background: #B7E4E2;
 	}
+.TOC {
+	float: left;
+	border: 2px solid black;
+	width: 100px;
+	height: 150px;
+	margin-left: 20px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px
+	}
 .username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
