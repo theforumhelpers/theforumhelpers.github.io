@@ -31,7 +31,8 @@
 	padding-left: 20px;
 	}
 /*navbar*/
-/*Links*/
+
+/* Page Links*/
 .FHULink:link {
 	color: black;
 	background-color: transparent;
@@ -49,8 +50,22 @@
 	background-color: transparent;
 	text-decoration: underline;
 	}
-/*All Links*/
+/*Page Links*/
+
+/*Main Page*/
+.MPContent {
+	background: #B7E4E2;
+	color: black;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+/*Main Page*/
+	
 /*Forum Helpers List*/
+.FHPContent {
+	background: #B7E4E2;
+	}
 .username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
@@ -70,3 +85,14 @@
 	text-align: justify;
 	}	
  /*Forum Helpers List*/
+	
+/*Footer*/
+.footer {
+	background: #31ACBA;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	height: 110px;
+	text-align: center;
+	}
+/*Footer*/
