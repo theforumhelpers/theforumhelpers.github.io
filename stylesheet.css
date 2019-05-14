@@ -31,6 +31,25 @@
 	padding-left: 20px;
 	}
 /*navbar*/
+/*Links*/
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+a:hover {
+	color: blue;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+/*All Links*/
 /*Forum Helpers List*/
 .username {
 	margin-left: 20px;
