@@ -32,19 +32,19 @@
 	}
 /*navbar*/
 /*Links*/
-.username:link {
+.FHULink:link {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 	}
 	
-.username:visited {
+.FHULink:visited {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 	}
 	
-.username:hover {
+.FHULink:hover {
 	color: blue;
 	background-color: transparent;
 	text-decoration: underline;
