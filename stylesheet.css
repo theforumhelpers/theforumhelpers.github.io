@@ -32,19 +32,19 @@
 	}
 /*navbar*/
 /*Links*/
-a:link {
+.username:link {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 	}
 	
-a:visited {
+.username:visited {
 	color: black;
 	background-color: transparent;
 	text-decoration: underline;
 	}
 	
-a:hover {
+.username:hover {
 	color: blue;
 	background-color: transparent;
 	text-decoration: underline;
