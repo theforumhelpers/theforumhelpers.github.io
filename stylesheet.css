@@ -60,12 +60,14 @@
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
+	font-family: Helvetica, Arial, sans-serif;
 	}
 /*Main Page*/
 	
 /*Forum Helpers List*/
 .FHPContent {
 	background: #B7E4E2;
+	font-family: Helvetica, Arial, sans-serif;
 	}
 .TOC {
 	float: left;
