@@ -33,21 +33,21 @@
 /*navbar*/
 
 /* Page Links*/
-.FHULink:link {
-	color: black;
-	background-color: transparent;
+a:link {
+	color: inherit;
+	background-color: inherit;
 	text-decoration: underline;
 	}
 	
-.FHULink:visited {
-	color: black;
-	background-color: transparent;
+a:visited {
+	color: inherit;
+	background-color: inherit;
 	text-decoration: underline;
 	}
 	
-.FHULink:hover {
+a:hover {
 	color: blue;
-	background-color: transparent;
+	background-color: inherit;
 	text-decoration: underline;
 	}
 /*Page Links*/
