@@ -33,19 +33,19 @@
 /*navbar*/
 
 /* Page Links*/
-a:link {
+.FHULink:link {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
 	}
 	
-a:visited {
+.FHULink:visited {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
 	}
 	
-a:hover {
+.FHULink:hover {
 	color: blue;
 	background-color: inherit;
 	text-decoration: underline;
