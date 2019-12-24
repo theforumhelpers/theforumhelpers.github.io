@@ -3,7 +3,7 @@ body {
 	}
 
 /*navbar*/
-.navbar {
+nav {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -62,7 +62,6 @@ body {
 	color: black;
 	font-size: 20px;
 	width: 100%;
-	text-align: center;
 	margin-top: 0px;
 	font-family: Helvetica, Arial, sans-serif;
 	}
@@ -105,12 +104,12 @@ body {
  /*Forum Helpers List*/
 	
 /*Footer*/
-.footer {
+footer {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
 	width: 100%;
-	height: 110px;
+	height: 200px;
 	text-align: center;
 	}
 /*Footer*/
