@@ -1,5 +1,6 @@
 body {
 	margin:0;
+	background: #B7E4E2;
 	}
 
 /*navbar*/
@@ -73,6 +74,10 @@ body {
 	background: #B7E4E2;
 	font-family: Helvetica, Arial, sans-serif;
 	}
+hr {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}
 .TOC {
 	float: left;
 	border: 2px solid black;
@@ -98,10 +103,16 @@ body {
 	}
 .bio {
 	margin-left: 20px;
-	margin-right: 400px;
+	margin-right: 20%;
+	margin-bottom: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	}	
+
+#FHP_Blocks {
+	min-height: 130px;
+	margin-bottom: 5px;
+	}
  /*Forum Helpers List*/
 	
 /*Footer*/
