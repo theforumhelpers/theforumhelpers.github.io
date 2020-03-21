@@ -8,20 +8,16 @@ assignees: 'Accio1'
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+A clear and concise description of what the bug is. Please use screenshots if applicable.
 
 **To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Steps to reproduce the bug
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
+A clear description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Browser Information**
+Include details about your browser and OS here. If possible, please identify if this is happening on just your browser and OS, or other ones as well.
 
 **Additional context**
 Add any other context about the problem here.
