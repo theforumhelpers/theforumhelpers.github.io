@@ -7,11 +7,9 @@ assignees: 'Accio1'
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Is your feature request related to a problem?**
+Yes? Please describe the problem and the solution that you have for the problem.
+No? Please describe the new feature which you would like to be added.
 
 **Describe alternatives you've considered**
 A clear and concise description of any alternative solutions or features you've considered.
