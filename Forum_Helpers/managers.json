@@ -34,10 +34,17 @@
         "helped_code": false
     },
     
-    "Sigton": {
-	"name": "Sigton",
+    "awesome-llama": {
+	"name": "awesome-llama",
         "id": "8832510",
         "bio": "I used to be a very active member of the forums, usually answering questions in the Help With Scripts and Questions About Scratch sub-forums, which about 95% of my approx. 2000 posts are dedicated to helping others. I have been on Scratch since 2015, so I have quite a bit of experience now. I have since begun other hobbies such as programming in Python, CGI (computer generated imagery), YouTube, website design and many more things. I still am on Scratch, just not as active as I used to.",
+        "helped_code": false
+    },
+
+    "Sigton": {
+        "name": "Sigton",
+        "id": "4268399",
+        "bio": "No Biography Provided",
         "helped_code": false
     },
     
