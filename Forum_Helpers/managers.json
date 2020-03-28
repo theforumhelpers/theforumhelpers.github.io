@@ -33,18 +33,18 @@
         "bio": "Hello, I'm bigpuppy! ^^ I started out on the forums by reporting duplicates, and I used to run the Suggestions Directory. I don't do as much on the forums as I used to, but I still sometimes come and help out for fun.",
         "helped_code": false
     },
-    
-    "awesome-llama": {
-	"name": "awesome-llama",
-        "id": "8832510",
-        "bio": "I used to be a very active member of the forums, usually answering questions in the Help With Scripts and Questions About Scratch sub-forums, which about 95% of my approx. 2000 posts are dedicated to helping others. I have been on Scratch since 2015, so I have quite a bit of experience now. I have since begun other hobbies such as programming in Python, CGI (computer generated imagery), YouTube, website design and many more things. I still am on Scratch, just not as active as I used to.",
-        "helped_code": false
-    },
 
     "Sigton": {
         "name": "Sigton",
         "id": "4268399",
         "bio": "No Biography Provided",
+        "helped_code": false
+    },
+    
+    "awesome-llama": {
+	"name": "awesome-llama",
+        "id": "8832510",
+        "bio": "I used to be a very active member of the forums, usually answering questions in the Help With Scripts and Questions About Scratch sub-forums, which about 95% of my approx. 2000 posts are dedicated to helping others. I have been on Scratch since 2015, so I have quite a bit of experience now. I have since begun other hobbies such as programming in Python, CGI (computer generated imagery), YouTube, website design and many more things. I still am on Scratch, just not as active as I used to.",
         "helped_code": false
     },
     
@@ -248,6 +248,20 @@
 	"name": "EZ-Games",
         "id": "44365017",
         "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+
+    "CatsUnited": {
+        "name": "CatsUnited",
+        "id": "4100896",
+        "bio": "I have more posts than Sigton.",
+        "helped_code": false
+    },
+
+    "E_Equals_EmCeCube3": {
+        "name": "E_Equals_EmCeCube3",
+        "id": 40324999,
+        "bio": "Hello there! I'm @E_Equals_EmCeCube3 and I love mathematics and physics. I've been on Scratch since September 2017 on a previous account. On the forums, you can find me mostly on the Questions about Scratch and Suggestions forums, happy to help. :)",
         "helped_code": false
     }
  }
