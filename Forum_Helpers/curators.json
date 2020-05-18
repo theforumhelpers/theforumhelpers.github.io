@@ -139,13 +139,6 @@
         "helped_code": false
     },
     
-    "XCat": {
-	"name": "XCat",
-        "id": "13581781",
-        "bio": "Hello there! I'm Cat! :) I'm an Aussie girl who loves reading, writing, puzzles, cats, Scratch and helping out! You can find me participating in Scratch Writing Camp and being a busy shop owner and association president on the Requests forum. :)",
-        "helped_code": false
-    },
-    
     "wWSunPandaWw": {
 	"name": "wWSunPandaWw",
         "id": "17931182",
@@ -262,6 +255,13 @@
         "name": "DipLeChip",
         "id": 10979666,
         "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+
+    "fdreerf": {
+        "name": "fdreerf",
+        "id": 2728054,
+        "bio": "I like procrastinating",
         "helped_code": false
     }
     
