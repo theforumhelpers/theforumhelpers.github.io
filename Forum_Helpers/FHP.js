@@ -13,7 +13,7 @@ man_pull.onreadystatechange = function() {
 			var man_userID = man_keyjson.id
 			var man_bio = man_keyjson.bio
 			var man_add=
-			`<div id="FHP_Blocks"><h4 class="username"><a href="https://scratch.mit.edu/users/${man_username}/" class="FHULink">${man_username}</a></h4>
+			`<div class="FHP_Blocks"><h4 class="username"><a href="https://scratch.mit.edu/users/${man_username}/" class="FHULink">${man_username}</a></h4>
 			<a href="https://scratch.mit.edu/users/${man_username}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${man_userID}_60x60.png" class="pfp" loading="lazy" alt="${man_username}'s Profile Picture"></a>
 			<p class="bio">${man_bio}</p>
 			<br></div>
@@ -40,7 +40,7 @@ cur_pull.onreadystatechange = function() {
 			var cur_userID = cur_keyjson.id
 			var cur_bio = cur_keyjson.bio
 			var cur_add=
-			`<div id="FHP_Blocks"><h4 class="username"><a href="https://scratch.mit.edu/users/${cur_username}/" class="FHULink">${cur_username}</a></h4>
+			`<div class="FHP_Blocks"><h4 class="username"><a href="https://scratch.mit.edu/users/${cur_username}/" class="FHULink">${cur_username}</a></h4>
 			<a href="https://scratch.mit.edu/users/${cur_username}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${cur_userID}_60x60.png" class="pfp" loading="lazy" alt="${cur_username}'s Profile Picture"></a>
 			<p class="bio">${cur_bio}</p>
 			<br></div>
