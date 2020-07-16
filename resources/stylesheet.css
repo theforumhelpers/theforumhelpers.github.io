@@ -24,6 +24,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	float: right;
+	height: inherit;
 	}
 .hbutton:hover {
 	background-color: #056472;
