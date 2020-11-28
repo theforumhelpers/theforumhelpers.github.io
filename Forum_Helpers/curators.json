@@ -250,13 +250,6 @@
         "bio": "No Biography Provided.",
         "helped_code": false
     },
-
-    {
-        "name": "fdreerf",
-        "id": 2728054,
-        "bio": "I like procrastinating",
-        "helped_code": false
-    },
 	
     {
         "name": "BearSlothCoding",
@@ -269,13 +262,6 @@
         "name": "Paigeri",
         "id": 49947688,
         "bio": "Hi there! I'm Paige! My passion for Scratch has grown year by year! I also love to help around Scratch! ^.^ I have done many things around this website such as helping out in the SDS (Scratch Design Studio), SWC (Scratch Welcoming Committee) and the PPTBF (Propose Projects to be Featured)! I wanted to try something new, so I applied for the Forum Helpers! Now, here I am! :D",
-        "helped_code": false
-    },
-	
-    {
-        "name": "xXRedTheCoderXx",
-        "id": 25035668,
-        "bio": "Hiya! My name is Red, and I like to change my profile picture to something wacky everyday. Feel free to say hi, or ask about something on my profile. :) I'm friendly (usually :P) and I gladly help users here on Scratch. Tie your shoes, and Scratch On!",
         "helped_code": false
     },
 	
@@ -336,17 +322,100 @@
     },
 	
 	{
-        "name": "Super_Scratch_Bros20",
-        "id": 35057879,
+        "name": "MeowyTitan08",
+        "id": 53396948,
         "bio": "No Biography Provided.",
         "helped_code": false
     },
 	
 	{
-        "name": "MeowyTitan08",
-        "id": 53396948,
+        "name": "M1mikyu",
+        "id": 24812934,
         "bio": "No Biography Provided.",
         "helped_code": false
-    }
+    },
+	
+	{
+        "name": "4096bits",
+        "id": 52085510,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+	{
+        "name": "4096bits",
+        "id": 52085510,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+
+	{
+        "name": "Illusion705",
+        "id": 48735258,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+	
+	{
+        "name": "Byron_Inc",
+        "id": 53813408,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+	
+	{
+        "name": "_-BuRnInGfLaMeS-_",
+        "id": 63072296,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+    },
+	
+	{
+        "name": "Ihatr",
+        "id": 63281245,
+        "bio": "Forumer.",
+        "helped_code": false
+    },
+	
+	{
+        "name": "ThatOneWeirdDude",
+        "id": 49160874,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+	
+	{
+        "name": "imfh",
+        "id": 3272838,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+	
+	{
+        "name": "leahcimto",
+        "id": 14126232,
+        "bio": "Hi! I am leahcimto. You can find me mostly in Questions about Scratch and Suggestions. I also enjoy editing the Scratch Wiki!",
+        "helped_code": false
+    },
+	
+	{
+        "name": "mtech22",
+        "id": 53075030,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+	
+	{
+        "name": "Bluebatstar",
+        "id": 10684376,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+	
+	{
+        "name": "FloralAnimator",
+        "id": 60931800,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
     
 ]
