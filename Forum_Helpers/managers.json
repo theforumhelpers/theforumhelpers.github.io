@@ -238,19 +238,19 @@
     },
     
     {
-	"name": "Geonaut",
-        "id": "46793790",
-        "bio": "Hi! I'm a forum helper and Scratch Wiki editor. You might find me roaming the vast halls of the Suggestions forum, where I give constructive criticism and debate about other people's suggestions for Scratch. I also frequently visit the QaS forums to help others out.",
-        "helped_code": false
-    },
-    
-    {
 	"name": "LegoManiac04",
         "id": "21629747",
         "bio": "Hi there! I'm @LegoManiac04! I've been on Scratch since February 2017 and a Forum Helper since early 2019. You can find me helping out in \"Suggestions\" and \"Questions About Scratch\" most often. I love answering people's questions as best as I can, and giving them constructive feedback on their suggestions! :D",
         "helped_code": false
     },
-    
+	
+    {
+	"name": "Geonaut",
+        "id": "46793790",
+        "bio": "Hi! I'm a forum helper and Scratch Wiki editor. You might find me roaming the vast halls of the Suggestions forum, where I give constructive criticism and debate about other people's suggestions for Scratch. I also frequently visit the QaS forums to help others out.",
+        "helped_code": false
+    },
+   
     {
 	"name": "WindOctahedron",
         "id": "42360472",
