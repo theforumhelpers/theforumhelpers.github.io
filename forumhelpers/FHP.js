@@ -1,7 +1,7 @@
 var man_addition=""
 var man_pull = new XMLHttpRequest()
 
-man_pull.open("GET", "https://theforumhelpers.github.io/Forum_Helpers/managers.json");
+man_pull.open("GET", "https://theforumhelpers.github.io/forumhelpers/managers.json");
 man_pull.send();
 man_pull.onreadystatechange = function() {
 	if (man_pull.readyState === 4 && man_pull.status === 200) {
@@ -28,7 +28,7 @@ man_pull.onreadystatechange = function() {
 var cur_addition=""
 var cur_pull = new XMLHttpRequest()
 
-cur_pull.open("GET", "https://theforumhelpers.github.io/Forum_Helpers/curators.json");
+cur_pull.open("GET", "https://theforumhelpers.github.io/forumhelpers/curators.json");
 cur_pull.send();
 cur_pull.onreadystatechange = function() {
   	if (cur_pull.readyState === 4 && cur_pull.status === 200) {
