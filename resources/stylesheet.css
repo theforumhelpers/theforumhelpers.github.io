@@ -31,16 +31,19 @@
       background: #bceae8;
       color: black;
       text-align: center;
-      font-family: Arial, 'Montserrat', sans-serif;
+      font-family: Arial, sans-serif;
       font-size: 20px;
+      margin-left: 200px;
+      margin-right: 200px;
       }
+
     /* end of home page (home) */
 
     /* list of forum helpers (FHP) */
 
     .FHP_content {
       background: #B7E4E2;
-      font-family: Arial, 'Montserrat', sans-serif;
+      font-family: Arial, sans-serif;
       }
 
     .FHP_TOC {
@@ -97,13 +100,13 @@
 
     /* links (FHULink) */
     .FHULink:link {
-    	color: powderblue;
+    	color: black;
     	background-color: inherit;
     	text-decoration: underline;
     	}
 
     .FHULink:visited {
-      color: powderblue;
+      color: black;
       background-color: inherit;
       text-decoration: underline;
       }
