@@ -4,7 +4,7 @@ body {
 	}
 
 /*navbar*/
-.navbar {
+.head_content {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -15,7 +15,7 @@ body {
 	padding: 3px;
 	float: left;
 	}
-.hbutton {
+.head_button {
 	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
@@ -27,7 +27,7 @@ body {
 	height: inherit;
 	box-sizing: border-box;
 	}
-.hbutton:hover {
+.head_button:hover {
 	background-color: #056472;
 	}
 #t {
@@ -45,13 +45,13 @@ body {
 	background-color: inherit;
 	text-decoration: underline;
 	}
-	
+
 .FHULink:visited {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
 	}
-	
+
 .FHULink:hover {
 	color: blue;
 	background-color: inherit;
@@ -60,7 +60,7 @@ body {
 /*Page Links*/
 
 /*Main Page*/
-.MPContent {
+.home_content {
 	background: #bceae8;
 	color: black;
 	font-size: 20px;
@@ -70,9 +70,9 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	}
 /*Main Page*/
-	
+
 /*Forum Helpers List*/
-.FHPContent {
+.FHP_Content {
 	background: #B7E4E2;
 	font-family: Helvetica, Arial, sans-serif;
 	}
@@ -80,7 +80,7 @@ hr {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	}
-.TOC {
+.FHP_TOC {
 	float: left;
 	border: 2px solid black;
 	width: 100px;
@@ -91,11 +91,11 @@ hr {
 	bottom: 5px;
 	background: #B7E4E2;
 	}
-.username {
+.FHP_username {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
 	}
-.pfp {
+.FHP_pfp {
 	margin-left: 20px;
 	float: left;
   	border-radius: 10px;
@@ -103,22 +103,22 @@ hr {
 	height: 60px;
   	width: 60px;
 	}
-.bio {
+.FHP_bio {
 	margin-left: 20px;
 	margin-right: 20%;
 	margin-bottom: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
-	}	
+	}
 
 .FHP_Blocks {
 	min-height: 130px;
 	margin-bottom: 5px;
 	}
  /*Forum Helpers List*/
-	
+
 /*Footer*/
-.footer {
+.footer_content {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
