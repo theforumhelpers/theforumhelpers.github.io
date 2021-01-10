@@ -4,18 +4,28 @@ body {
 	}
 
 /*navbar*/
-.head_content {
+.nav_content {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
 	width: 100%;
 	height: 70px;
 	}
-#home {
+
+.nav_homeicon {
 	padding: 3px;
 	float: left;
 	}
-.head_button {
+
+.nav_title {
+	float: left;
+	color: white;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-left: 20px;
+	}
+
+.nav_button {
 	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
@@ -27,16 +37,11 @@ body {
 	height: inherit;
 	box-sizing: border-box;
 	}
-.head_button:hover {
+
+.nav_button:hover {
 	background-color: #056472;
 	}
-#t {
-	float: left;
-	color: white;
-	margin-top: 0px;
-	padding-top: 10px;
-	padding-left: 20px;
-	}
+
 /*navbar*/
 
 /* Page Links*/
@@ -69,18 +74,21 @@ body {
 	margin-top: 0px;
 	font-family: Helvetica, Arial, sans-serif;
 	}
+
 /*Main Page*/
 
 /*Forum Helpers List*/
-.FHP_Content {
+.forumhelpers_content {
 	background: #B7E4E2;
 	font-family: Helvetica, Arial, sans-serif;
 	}
+
 hr {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	}
-.FHP_TOC {
+
+.forumhelpers_navblock {
 	float: left;
 	border: 2px solid black;
 	width: 100px;
@@ -91,11 +99,13 @@ hr {
 	bottom: 5px;
 	background: #B7E4E2;
 	}
-.FHP_username {
+
+.forumhelpers_name {
 	margin-left: 20px;
 	font-family: Comfortaa, "Comic Sans MS", serif;
 	}
-.FHP_pfp {
+
+.forumhelpers_pfp {
 	margin-left: 20px;
 	float: left;
   	border-radius: 10px;
@@ -103,7 +113,8 @@ hr {
 	height: 60px;
   	width: 60px;
 	}
-.FHP_bio {
+
+.forumhelpers_bio {
 	margin-left: 20px;
 	margin-right: 20%;
 	margin-bottom: 0px;
@@ -111,10 +122,11 @@ hr {
 	text-align: justify;
 	}
 
-.FHP_Blocks {
+.forumhelpers_blocks {
 	min-height: 130px;
 	margin-bottom: 5px;
 	}
+
  /*Forum Helpers List*/
 
 /*Footer*/
@@ -126,4 +138,5 @@ hr {
 	height: 110px;
 	text-align: center;
 	}
+
 /*Footer*/
