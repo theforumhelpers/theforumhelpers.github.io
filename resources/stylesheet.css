@@ -79,7 +79,7 @@ body {
 .home_answers {
 	margin-left: 200px;
 	margin-right: 200px;
-}
+	}
 
 /*Main Page*/
 
@@ -87,7 +87,6 @@ body {
 .forumhelpers_content {
 	background: #B7E4E2;
 	font-family: Helvetica, Arial, sans-serif;
-	margin: 0;
 	}
 
 hr {
@@ -106,6 +105,19 @@ hr {
 	bottom: 5px;
 	background: #B7E4E2;
 	text-align: center;
+	}
+
+.forumhelpers_header {
+	text-align: center;
+	}
+
+.forumhelpers_subheaders{
+	margin-left: 20px;
+	}
+
+.forumhelpers_blocks {
+	min-height: 130px;
+	margin-bottom: 5px;
 	}
 
 .forumhelpers_name {
@@ -129,21 +141,6 @@ hr {
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	}
-
-.forumhelpers_blocks {
-	min-height: 130px;
-	margin-bottom: 5px;
-	}
-
-.forumhelpers_header {
-	text-align: center;
-}
-
-.forumhlpers_subheaders{
-	margin-left: 20px;
-}
-
-
  /*Forum Helpers List*/
 
 /*Footer*/
