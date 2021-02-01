@@ -1,9 +1,9 @@
 unreviewed:
-  - *
-  
+  - any: ['*']
+
 Forum Helpers List:
-  - /forumhelpers/curators.json
-  - /forumhelpers/managers.json
+  - forumhelpers/curators.json
+  - forumhelpers/managers.json
   
 documentation:
   - README.md
