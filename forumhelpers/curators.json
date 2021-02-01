@@ -140,13 +140,6 @@
     },
 
     {
-	    "name": "PrincessFlowerTV",
-        "id": "22554997",
-        "bio": "Hello, i'm @PrincessFlowerTV! I love to draw anime, read & write Fantasy, and drink bubble tea. I have been on scratch for 4 years, and on the forums 3. You will probably find me helping out in QAS, or posting in the 'Suggestions' forum. I try to be as constructive and friendly as possible.",
-        "helped_code": false
-    },
-
-    {
 	    "name": "python_megapixel",
         "id": "26187981",
         "bio": "No Biography Provided.",
@@ -178,13 +171,6 @@
 	    "name": "rainpelt28",
         "id": "13694207",
         "bio": "I started Scratch about 3-4 years ago. 2016 was the year that I started using the forums. I ran a post called the shop magazine for a long while, racking up 9 pages of shops wanting to be listed. After a year or so, I became overwhelmed and had to take and Scratch break and shut it down. In 2017, I was asked to take over the shop directory. I enjoyed doing that and found that I enjoyed helping out in the forums. Now I own the \"intro to request forums\" sticky and love to help people out!",
-        "helped_code": false
-    },
-
-    {
-	    "name": "FloatingMuffins",
-        "id": "32871990",
-        "bio": "No Biography Provided.",
         "helped_code": false
     },
 
@@ -268,7 +254,7 @@
     {
         "name": "BearSlothCoding",
         "id": 45826642,
-        "bio": "Hey, I'm BSC or Bear. I spend most of my time on Scratch on the forums. I am on the Questions about Scratch and Suggestions forums the most but you can see me on pretty much all of them.",
+        "bio": "Hey, I'm BSC. I used to be active in QaS and Suggestions but now school has left me only posting weird two to three paragraph almost essays no one asked for in TIRAP.",
         "helped_code": false
     },
 
@@ -398,12 +384,6 @@
         "helped_code": false
     },
 
-	{
-        "name": "leahcimto",
-        "id": 14126232,
-        "bio": "Hi! I am leahcimto. You can find me mostly in Questions about Scratch and Suggestions. I also enjoy editing the Scratch Wiki!",
-        "helped_code": false
-    },
 
 	{
         "name": "mtech22",
@@ -451,6 +431,68 @@
         "id": 54468914,
         "bio": "I sometimes am funny (that's a lie). I collect Beanie Boos. Like rollercoasters, politics, Pokemon, Animal Crossing, nerdcore rap and trees. OK now lets do tree for tree.",
         "helped_code": false
-    }
+    },
+  {
+        "name": "dogsmakemehappy",
+        "id": 17609915,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+
+  {
+        "name": "garnetluvcookie",
+        "id": 56239390,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+
+  {
+        "name": "Jeffalo",
+        "id": 34018398,
+        "bio": "jeffalo",
+        "helped_code": false
+    },
+
+  {
+        "name": "scratchykit5743",
+        "id": 39136554,
+        "bio": "Hey, I’m scratchykit! I’m an autistic 7th grader who has interest in glee, the New York islanders and cinematic furry memes. I get a lot of 60-second rules and am very anger-prone, so keep note of that.",
+        "helped_code": false
+    },
+
+  {
+        "name": "-Charon-",
+        "id": 41409105,
+        "bio": "Howdy, I'm Charon! You can find me most often in the Questions about Scratch and the Things I'm Reading and Playing forum categories. When I'm not on the forums, I like to make random garbage and play video games like the doofus I am.",
+        "helped_code": false
+    },
+
+  {
+        "name": "ScratchCatHELLO",
+        "id": 25888082,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+
+  {
+        "name": "chxrrycola--",
+        "id": 70687323,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+
+  {
+        "name": "mybearworld",
+        "id": 62325737,
+        "bio": "No Biography Provided",
+        "helped_code": false
+    },
+
+  {
+        "name": "9cjames1",
+        "id": 26089328,
+        "bio": "No Biography Provided",
+        "helped_code": false
+  }
 
 ]
