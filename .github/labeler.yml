@@ -1,0 +1,11 @@
+unreviewed:
+  - ./**/*
+  
+Forum Helpers List:
+  - /forumhelpers/curators.json
+  - /forumhelpers/managers.json
+  
+documentation:
+  - README.md
+  - LICENSE
+  - .github/**/*
