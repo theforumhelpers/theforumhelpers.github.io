@@ -1,5 +1,5 @@
 unreviewed:
-  - ./**/*
+  - *
   
 Forum Helpers List:
   - /forumhelpers/curators.json
