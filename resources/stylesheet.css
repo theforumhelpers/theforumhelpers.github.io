@@ -23,7 +23,6 @@ body {
 
 .nav_title {
 	float: left;
-	color: white;
 	margin-top: 0px;
 	padding-top: 10px;
 	padding-left: 20px;
@@ -31,9 +30,9 @@ body {
 	}
 
 .nav_button {
-	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
+	color: white;
 	transition-duration: 0.4s;
 	padding: 25px 5px 25px 5px;
 	text-decoration: none;
@@ -108,7 +107,6 @@ hr {
 	position: fixed;
 	right: 5px;
 	bottom: 5px;
-	background: #B7E4E2;
 	text-align: center;
 	}
 
@@ -137,17 +135,16 @@ hr {
 .forumhelpers_pfp {
 	margin-left: 20px;
 	float: left;
-  	border-radius: 10px;
+  border-radius: 10px;
 	margin-right: 10px;
 	height: 60px;
-  	width: 60px;
+  width: 60px;
 	}
 
 .forumhelpers_bio {
 	margin-left: 20px;
 	margin-right: 20%;
 	margin-bottom: 0px;
-	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	}
  /*Forum Helpers List*/
