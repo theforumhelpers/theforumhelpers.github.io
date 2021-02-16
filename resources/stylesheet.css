@@ -23,7 +23,6 @@ body {
 
 .nav_title {
 	float: left;
-	color: white;
 	margin-top: 0px;
 	padding-top: 10px;
 	padding-left: 20px;
@@ -31,9 +30,9 @@ body {
 	}
 
 .nav_button {
-	color: white;
 	background-color: #31ACBA;
 	font-size: 16px;
+	color: white;
 	transition-duration: 0.4s;
 	padding: 25px 5px 25px 5px;
 	text-decoration: none;
@@ -71,7 +70,6 @@ body {
 
 /*Main Page*/
 .home_content {
-	background: #bceae8;
 	color: black;
 	font-size: 20px;
 	width: 100%;
@@ -81,36 +79,37 @@ body {
 	}
 
 .home_answers {
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 10%;
+	margin-right: 10%;
 	}
 
 /*Main Page*/
 
 /*Forum Helpers List*/
 .forumhelpers_content {
-	background: #B7E4E2;
 	font-family: Helvetica, Arial, sans-serif;
 	}
 
 hr {
-	margin-bottom: 0px;
-	margin-top: 0px;
-	margin-right: 20px;
+	margin: 0px 20px 0px 20px;
 	}
 
 .forumhelpers_navblock {
-	float: left;
 	border: 2px solid black;
 	width: 100px;
-	height: 150px;
-	margin-left: 20px;
+	height: 125px;
 	position: fixed;
 	right: 5px;
 	bottom: 5px;
-	background: #B7E4E2;
 	text-align: center;
+	background: #B7E4E2;
 	}
+
+@media only screen and (max-width: 800px) {
+	.forumhelpers_navblock {
+		display: none;
+	}
+}
 
 .forumhelpers_header {
 	text-align: center;
@@ -126,28 +125,25 @@ hr {
 
 .forumhelpers_blocks {
 	min-height: 130px;
-	margin-bottom: 5px;
+	margin-left: 20px;
 	}
 
 .forumhelpers_name {
-	margin-left: 20px;
 	font-family: Arial, sans-serif;
 	}
 
 .forumhelpers_pfp {
-	margin-left: 20px;
 	float: left;
   	border-radius: 10px;
 	margin-right: 10px;
 	height: 60px;
-  	width: 60px;
+ 	width: 60px;
 	}
 
 .forumhelpers_bio {
 	margin-left: 20px;
 	margin-right: 20%;
 	margin-bottom: 0px;
-	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	}
  /*Forum Helpers List*/
