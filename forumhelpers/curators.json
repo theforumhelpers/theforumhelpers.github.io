@@ -364,13 +364,6 @@
     },
 
 	{
-        "name": "Ihatr",
-        "id": 63281245,
-        "bio": "the person's bio below me is false",
-        "helped_code": false
-    },
-
-	{
         "name": "ThatOneWeirdDude",
         "id": 49160874,
         "bio": "the person's bio above me is true",
