@@ -9,3 +9,4 @@ documentation:
   - README.md
   - LICENSE
   - .github/**/*
+  - contributors/contributors.html

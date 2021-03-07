@@ -148,15 +148,51 @@ hr {
 	}
  /*Forum Helpers List*/
 
+/*Credits*/
+.credits_content {
+	color: black;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	}
+
+.credits_people {
+	display: flex;
+	padding: 10px 15%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.credits_block {
+	padding: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+
+.credits_pfp {
+	border-radius: 10px;
+	width: 100px;
+}
+
+.credits_link {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*Credits*/
+
 /*Footer*/
 .footer_content {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
 	width: 100%;
+	padding: 10px;
 	height: 110px;
+	box-sizing: border-box;
 	text-align: center;
-	line-height: 10px;
 	font-family: Arial, sans-serif;
 	}
 
