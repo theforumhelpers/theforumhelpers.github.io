@@ -35,6 +35,12 @@
 					<a href="https://github.com/${name}" class="credits_link"><img src="https://github.com/${name}.png?size=100" class="credits_pfp" alt="${name}'s Profile Picture"><br>
 					<p>${name}</p></a>
 				</div>`
+				if (tempContent.includes("Accio1") == t) {
+					tempContent = `<div class="credits_block">
+					<a href="https://github.com/${name}" class="credits_link"><img src="https://github.com/${name}.png?size=100" class="credits_pfpF" alt="${name}'s Profile Picture"><br>
+					<p>${name}</p></a>
+				</div>`
+				}
 				content = content + tempContent
 				i = i+1
 			}
