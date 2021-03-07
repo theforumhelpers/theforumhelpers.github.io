@@ -75,7 +75,7 @@ body {
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	}
 
 .home_answers {
@@ -87,7 +87,7 @@ body {
 
 /*Forum Helpers List*/
 .forumhelpers_content {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	}
 
 hr {
@@ -155,7 +155,7 @@ hr {
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	}
 
 .credits_people {
