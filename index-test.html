@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScratchData</title>
+</head>
+<body>
+
+Note: You must include a username in the url (?username=ExampleUser) for the data to load!
+<b>Your last post:</b>
+<font id="lastpost">Loading data...</font>
+  
+<script>
+var url = window.location.search;
+var username = url.substring(10);
+
+var font = document.querySelector("#lastpost");
+fetch("https://scratchdb.lefty.one/v2/forum/user/info/" + username)
+  .then(response => response.json())
+  .then(json => {
+     if (!json) alert("error!");
+     else font.innerHTML = json.lastPost.content.html
+});
+</script>
+</body>
+</html>
