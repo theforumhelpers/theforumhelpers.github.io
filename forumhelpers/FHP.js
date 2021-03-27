@@ -27,7 +27,7 @@ fetch("https://theforumhelpers.github.io/forumhelpers/curators.json").catch((err
 	let curatorList = document.getElementById("FHPCur_Lists")
 	man_length = Object.keys(data).length
 	for (var cur_key in data) {
-		var curatorData = data[man_key]
+		var curatorData = data[cur_key]
 		var username = curatorData.name
 		var userid = curatorData.id
 		var bio = curatorData.bio || "No biography provided."
