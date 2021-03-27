@@ -19,7 +19,7 @@ fetch("https://theforumhelpers.github.io/forumhelpers/managers.json").catch((err
 		managerList.innerHTML=man_addition;
 	}
 })
-var cur_addition=""
+var cur_addition = ""
 fetch("https://theforumhelpers.github.io/forumhelpers/curators.json").catch((error) => {
 	throw error
 }).then(response => response.json())
@@ -31,9 +31,9 @@ fetch("https://theforumhelpers.github.io/forumhelpers/curators.json").catch((err
 		var username = curatorData.name
 		var userid = curatorData.id
 		var bio = curatorData.bio || "No biography provided."
-		var toAdd = `<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${man_username}/" class="FHULink">${man_username}</a></h4>
-			<a href="https://scratch.mit.edu/users/${man_username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${man_userID}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${man_username}'s Profile Picture"></a>
-			<p class="forumhelpers_bio">${man_bio}</p>
+		var toAdd = `<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${username}/" class="FHULink">${username}</a></h4>
+			<a href="https://scratch.mit.edu/users/${username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${userid}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${username}'s Profile Picture"></a>
+			<p class="forumhelpers_bio">${bio}</p>
 			<br></div>
 			<hr>`
 		cur_addition += toAdd
