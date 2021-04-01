@@ -11,7 +11,7 @@ man_pull.onreadystatechange = function() {
     			var man_keyjson = man_pulldone[man_key];
 			var man_username = man_keyjson.name
 			var man_userID = man_keyjson.id
-			var man_bio = man_keyjson.bio
+			var man_bio = man_keyjson.bio.toUpperCase().replaceAll(/[,.!?]/ig, ";")
 			var man_add=
 			`<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${man_username}/" class="FHULink">${man_username}</a></h4>
 			<a href="https://scratch.mit.edu/users/${man_username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${man_userID}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${man_username}'s Profile Picture"></a>
@@ -38,7 +38,7 @@ cur_pull.onreadystatechange = function() {
     			var cur_keyjson = cur_pulldone[cur_key];
 			var cur_username = cur_keyjson.name
 			var cur_userID = cur_keyjson.id
-			var cur_bio = cur_keyjson.bio
+			var cur_bio = cur_keyjson.bio.toUpperCase().replaceAll(/[,.!?]/ig, ";")
 			var cur_add=
 			`<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${cur_username}/" class="FHULink">${cur_username}</a></h4>
 			<a href="https://scratch.mit.edu/users/${cur_username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${cur_userID}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${cur_username}'s Profile Picture"></a>
