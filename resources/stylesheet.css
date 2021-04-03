@@ -183,6 +183,22 @@ hr {
 }
 /*Credits*/
 
+/*404 (had to use lost since css won't use numbers at the start of class names*/
+.lost_title {
+	color:black;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.lost_content {
+	color:black;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+
+}
 /*Footer*/
 .footer_content {
 	background: #31ACBA;
