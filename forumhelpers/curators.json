@@ -462,12 +462,6 @@
         "helped_code": false
   },
 
-  {
-        "name": "jeffalo",
-        "id": 34018398,
-        "bio": "admin panel enthusiast",
-        "helped_code": false
-  },
 
   {
         "name": "dogsmakemehappy",
@@ -528,6 +522,13 @@
   {
         "name": "MoreThanEnuff",
         "id": 70254448,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+  },
+	
+  {
+        "name": "wangat",
+        "id": 62007502,
         "bio": "No Biography Provided.",
         "helped_code": false
   }
