@@ -16,7 +16,7 @@ function getData(dataSet) {
 						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
 						<p class="profileBio">${bio}</p>
 					</div>
-					<p class="FullOcular" id="${name}Ocular" style="border: 5px solid black; border-radius: 10px; padding: 5px; margin-right:20%; width: fit-content" title="Ocular Status"><span class="ocularStatus" id="${name}Status">Loading Status...</span></p>
+					<p class="ocularStatusBox" id="${name}Ocular" title="Ocular Status"><span class="ocularStatus" id="${name}Status">Loading Status...</span></p>
 				</div>
 				<hr>`;
 				document.getElementById(dataSet+"List").innerHTML = section + addition;
