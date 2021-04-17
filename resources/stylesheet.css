@@ -6,6 +6,24 @@ body {
 	background: #B7E4E2;
 	}
 
+a {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+a:visited:not(.nav_button):visited  {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: underline;
+	}
+
+a:hover:not(.nav_button):hover {
+	color: blue;
+	background-color: inherit;
+	text-decoration: underline;
+	}
+
 /*navbar*/
 .nav_content {
 	background: #31ACBA;
@@ -47,26 +65,6 @@ body {
 	}
 
 /*navbar*/
-
-/* Page Links*/
-.FHULink:link {
-	color: inherit;
-	background-color: inherit;
-	text-decoration: underline;
-	}
-
-.FHULink:visited {
-	color: inherit;
-	background-color: inherit;
-	text-decoration: underline;
-	}
-
-.FHULink:hover {
-	color: blue;
-	background-color: inherit;
-	text-decoration: underline;
-	}
-/*Page Links*/
 
 /*Main Page*/
 .home_content {
@@ -116,23 +114,31 @@ hr {
 	}
 
 .forumhelpers_subheaders{
+	width: fit-content;
 	margin-left: 20px;
-	margin-right: 20px;
 	background: #31ACBA;
 	padding: 10px;
 	border-radius: 10px;
 	}
 
-.forumhelpers_blocks {
+.profileContainer {
 	min-height: 130px;
 	margin-left: 20px;
 	}
 
-.forumhelpers_name {
+.profileName {
 	font-family: Arial, sans-serif;
 	}
 
-.forumhelpers_pfp {
+.profileInner {
+	display: grid;
+	grid-template-columns: auto calc(100vw - 30vw);
+	grid-template-rows: minmax(min-content, max-content);
+	justify-content: start;
+	align-content: start;
+}
+
+.profilePicture {
 	float: left;
   	border-radius: 10px;
 	margin-right: 10px;
@@ -140,12 +146,18 @@ hr {
  	width: 60px;
 	}
 
-.forumhelpers_bio {
-	margin-left: 20px;
-	margin-right: 20%;
-	margin-bottom: 0px;
-	text-align: justify;
+.profileBio {
+	margin: 0px 20px 10px 0px;
+	text-align: left;
 	}
+
+.ocularStatusBox {
+	border: 5px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	margin-right:20%;
+	width: fit-content;
+}
  /*Forum Helpers List*/
 
 /*Credits*/
