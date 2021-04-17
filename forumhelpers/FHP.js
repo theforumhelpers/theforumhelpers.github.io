@@ -26,9 +26,9 @@ function getData(dataSet) {
 				else if (j == data.length-1) {
 					document.getElementById("totalNumber").innerHTML = parseInt(document.getElementById("managersNumber").innerHTML) + parseInt(document.getElementById("curatorsNumber").innerHTML);
 				}
-				grabDelay = grabDelay + 250;
-				setTimeout(getOcular, grabDelay, name);
-				//setTimeout(getCount, grabDelay, name);
+				grabDelay = grabDelay + 500;
+				getOcular(name);
+				setTimeout(getCount, grabDelay, name);
 			}
 		});
 
@@ -51,7 +51,7 @@ function getOcular(name) {
 }
 
 function getCount(name) {
-	fetch("https://scratchdb.lefty.one/v2/forum/user/info/"+name)
+	fetch("https://scratchdb.lefty.one/v3/forum/user/info/"+name)
 		.then(response => response.json())
 		.then(data => {
 			var posts = data.counts.total.count;
