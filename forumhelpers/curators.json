@@ -252,13 +252,6 @@
     },
 
     {
-        "name": "BearSlothCoding",
-        "id": 45826642,
-        "bio": "Hey, I'm BSC. I used to be active in QaS and Suggestions but now school has left me only posting weird two to three paragraph almost essays no one asked for in TIRAP.",
-        "helped_code": false
-    },
-
-    {
         "name": "Paigeri",
         "id": 49947688,
         "bio": "Hi there! I'm Paige! My passion for Scratch has grown year by year! I also love to help around Scratch! ^.^ I have done many things around this website such as helping out in the SDS (Scratch Design Studio), SWC (Scratch Welcoming Committee) and the PPTBF (Propose Projects to be Featured)! I wanted to try something new, so I applied for the Forum Helpers! Now, here I am! :D",
@@ -435,13 +428,6 @@
   },
 
   {
-        "name": "Futurebot5",
-        "id": 61883320,
-        "bio": "Hi! I got accepted into The Forum Helpers in March 2021. You'll find me most in Suggestions.",
-        "helped_code": false
-  },
-
-  {
         "name": "Steve0Greatness",
         "id": 61820378,
         "bio": "Hey there! I'm @Steve0Greatness on Scratch... uh...",
@@ -457,7 +443,7 @@
 
   {
         "name": "mybearworld",
-        "id": 61394416,
+        "id": 62325737,
         "bio": "Hi, I'm mybearworld! I like maths, and I'm at scratch pretty often! Happy foruming! 🐻",
         "helped_code": false
   },
@@ -529,8 +515,31 @@
   {
         "name": "wangat",
         "id": 62007502,
+        "bio": "Hey I'm wangat! Scratch Contributor in the Wiki, forums, SDS, and other areas. 500+ posts. Mostly active in Questions about Scratch and Suggestions",
+        "helped_code": false
+  },
+
+  {
+        "name": "PUNNAMOODU",
+        "id": 30323614,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+  },
+
+  {
+        "name": "gosoccerboy5",
+        "id": 13633428,
+        "bio": "No Biography Provided.",
+        "helped_code": false
+  },
+
+  {
+        "name": "samq64",
+        "id": 65550396,
         "bio": "No Biography Provided.",
         "helped_code": false
   }
+
+
 
 ]
