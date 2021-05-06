@@ -15,22 +15,28 @@
 			<h1>Contributors</h1>
 			<h2>Thank you to all of the following people who helped make this site possible.</h2>
 			<div class="credits_people" id="credits_people">
-			
+
 			</div>
+
+			<h2>Thank you to the following services and their contributors that help make this site possible.</h2>
+			<p><a href="https://ocular.jeffalo.net/" class="FHULink">Ocular by Jeffalo</a> - Used to get Ocular Statuses for the List of Forum Helpers Page.</p>
+			<p><a href="https://scratchdb.lefty.one/" class="FHULink">ScratchDB by DatOneLefty</a> - Used to get post counts for the List of Forum Helpers Page.</p>
+
+			<br>
 			<h3>Thank you additionally to everyone who submitted biographies for our <a href="https://theforumhelpers.github.io/forumhelpers/" class="FHULink">List of Forum Helpers Page</a>.</h3>
 			<h3>Interested in contibuting? Visit our <a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink">GitHub Repository</a>!</h3>
 		</div>
 
 		<embed type="text/html" src="../resources/footer.html" style="width:100%; height:110px; margin-bottom:-5px">
-		
+
 		<script>
 			var contributors = ["Accio1", "leahcimto", "NilsTheBest", "Nambaseking01", "shefwerld", "FunctionalMetatable", "ShadowOfTheFuture", "Shluffy", "bremea", "awesome-llama", "CodeGuy92", "jeffalo", "MTM828", "The64thCucumber"]
-			
+
 			var i=0
 			var content = ""
 			while (i < contributors.length) {
 				var name = contributors[i]
-				var tempContent = 
+				var tempContent =
 					`<div class="credits_block">
 					<a href="https://github.com/${name}" class="credits_link"><img src="https://github.com/${name}.png?size=100" class="credits_pfp" alt="${name}'s Profile Picture"><br>
 					<p>${name}</p></a>
