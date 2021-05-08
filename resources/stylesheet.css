@@ -70,6 +70,7 @@ header {
 	}
 
 .expandableDropdown {
+	background-color: #31ACBA;
 	display: none;
 	width: 50px;
 	height: 50px;
@@ -99,6 +100,7 @@ header {
 	position: absolute;
 	right: 0;
 	top: 0;
+	height: 60px;
 }
 
 .expandableDropdown:hover .expandableLink {
