@@ -40,12 +40,17 @@ function getOcular(name) {
 		.then(data => {
 			var status = data.status;
 			status ??= "none";
+			var ocularDiv = document.getElementById(name+"Ocular");
 			if (status != "none") {
 				document.getElementById(name+"Status").innerText = status;
-				document.getElementById(name+"Ocular").style.borderColor = data.color;
+				ocularDiv.style.borderColor = data.color;
 			}
 			else {
-				document.getElementById(name+"Ocular").style.display = "none";
+				ocularDiv.style.display = "none";
+			}
+			if (document.getElementById(name+"Status").innerText === "" && data.color != undefined) {
+				ocularDiv.style.backgroundColor = data.color;
+				ocularDiv.style.width = "0px";
 			}
 		});
 }
