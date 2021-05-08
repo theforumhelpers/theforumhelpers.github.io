@@ -1,13 +1,17 @@
 function reference(link) {
 	const headerContent = `
-	<div class="nav_content">
-		<a href="${link}" target="_parent">
-			<img src="${link}resources/icon.png" width="64px" height="64px" class="nav_homeicon">
-		</a>
-		<h1 class="nav_title">The Forum Helpers</h1>
-		<a href="${link}forumhelpers" class="nav_button" target="_parent">List Of Forum Helpers</a>
-		<a href="https://scratch.mit.edu/studios/3688309/" class="nav_button" target="_blank">Our Scratch Studio</a>
-		<a href="https://theforumhelpers.github.io/QuickReply/" class="nav_button" target="_parent">QuickReply</a>
+	<a href="${link}" target="_parent">
+		<img src="${link}resources/icon.png" width="64px" height="64px" class="nav_homeicon">
+	</a>
+	<h1 class="nav_title">The Forum Helpers</h1>
+	<a href="${link}forumhelpers" class="nav_button" target="_parent">List Of Forum Helpers</a>
+	<a href="https://scratch.mit.edu/studios/3688309/" class="nav_button" target="_blank">Our Scratch Studio</a>
+	<a href="https://theforumhelpers.github.io/QuickReply/" class="nav_button" target="_parent">QuickReply</a>
+
+	<div class="expandableDropdown">
+		<a class="expandableLink" href="${link}forumhelpers">List Of Forum Helpers</a>
+		<a class="expandableLink" href="https://scratch.mit.edu/studios/3688309/">Our Scratch Studio</a>
+		<a class="expandableLink" href="https://theforumhelpers.github.io/QuickReply/">QuickReply</a>
 	</div>`
 	document.getElementById("header").innerHTML = headerContent;
 
