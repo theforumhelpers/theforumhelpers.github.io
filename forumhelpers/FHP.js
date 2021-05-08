@@ -1,53 +1,60 @@
-var man_addition=""
-var man_pull = new XMLHttpRequest()
+function getData(dataSet) {
+	var grabDelay = 0
+	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
+		.then(response => response.json())
+		.then(data => {
+			document.getElementById(dataSet+"Number").innerHTML = data.length;
+			for (j = 0; j < data.length; j++) {
+				var name = data[j].name;
+				var id = data[j].id;
+				var bio = data[j].bio;
+				var section = document.getElementById(dataSet+"List").innerHTML;
+				var addition = `
+				<div class="profileContainer" id="${name}">
+					<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
+					<div class="profileInner">
+						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
+						<p class="profileBio">${bio}</p>
+					</div>
+					<p class="ocularStatusBox" id="${name}Ocular" title="Ocular Status"><span class="ocularStatus" id="${name}Status">Loading Status...</span></p>
+				</div>
+				<hr>`;
+				document.getElementById(dataSet+"List").innerHTML = section + addition;
+				if (j == data.length-1 && dataSet != "curators") {
+					getData("curators");
+				}
+				else if (j == data.length-1) {
+					document.getElementById("totalNumber").innerHTML = parseInt(document.getElementById("managersNumber").innerHTML) + parseInt(document.getElementById("curatorsNumber").innerHTML);
+				}
+				grabDelay = grabDelay + 500;
+				getOcular(name);
+				setTimeout(getCount, grabDelay, name);
+			}
+		});
 
-man_pull.open("GET", "https://theforumhelpers.github.io/forumhelpers/managers.json");
-man_pull.send();
-man_pull.onreadystatechange = function() {
-	if (man_pull.readyState === 4 && man_pull.status === 200) {
-   		man_pulldone = JSON.parse(man_pull.responseText);
-		man_legnth = Object.keys(man_pulldone).length
-		for(var man_key in man_pulldone){
-    			var man_keyjson = man_pulldone[man_key];
-			var man_username = man_keyjson.name
-			var man_userID = man_keyjson.id
-			var man_bio = man_keyjson.bio
-			var man_add=
-			`<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${man_username}/" class="FHULink">${man_username}</a></h4>
-			<a href="https://scratch.mit.edu/users/${man_username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${man_userID}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${man_username}'s Profile Picture"></a>
-			<p class="forumhelpers_bio">${man_bio}</p>
-			<br></div>
-			<hr>`
-
-				man_addition= man_addition+man_add
-				document.getElementById("FHPMan_Lists").innerHTML=man_addition;
-   		}
-	}
 }
 
-var cur_addition=""
-var cur_pull = new XMLHttpRequest()
+function getOcular(name) {
+	fetch("https://my-ocular.jeffalo.net/api/user/"+name)
+		.then(response => response.json())
+		.then(data => {
+			var status = data.status;
+			status ??= "none";
+			if (status != "none") {
+				document.getElementById(name+"Status").innerText = status;
+				document.getElementById(name+"Ocular").style.borderColor = data.color;
+			}
+			else {
+				document.getElementById(name+"Ocular").style.display = "none";
+			}
+		});
+}
 
-cur_pull.open("GET", "https://theforumhelpers.github.io/forumhelpers/curators.json");
-cur_pull.send();
-cur_pull.onreadystatechange = function() {
-  	if (cur_pull.readyState === 4 && cur_pull.status === 200) {
-   		cur_pulldone = JSON.parse(cur_pull.responseText);
-		cur_legnth = Object.keys(cur_pulldone).length
-		for(var cur_key in cur_pulldone){
-    			var cur_keyjson = cur_pulldone[cur_key];
-			var cur_username = cur_keyjson.name
-			var cur_userID = cur_keyjson.id
-			var cur_bio = cur_keyjson.bio
-			var cur_add=
-			`<div class="forumhelpers_blocks"><h4 class="forumhelpers_name"><a href="https://scratch.mit.edu/users/${cur_username}/" class="FHULink">${cur_username}</a></h4>
-			<a href="https://scratch.mit.edu/users/${cur_username}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${cur_userID}_60x60.png" class="forumhelpers_pfp" loading="lazy" alt="${cur_username}'s Profile Picture"></a>
-			<p class="forumhelpers_bio">${cur_bio}</p>
-			<br></div>
-			<hr>`
-
-			cur_addition= cur_addition+cur_add
-			document.getElementById("FHPCur_Lists").innerHTML=cur_addition;
-		}
-	}
+function getCount(name) {
+	fetch("https://scratchdb.lefty.one/v3/forum/user/info/"+name)
+		.then(response => response.json())
+		.then(data => {
+			var posts = data.counts.total.count;
+			document.getElementById(name+"Posts").innerText = " - "+posts+" Posts";
+		});
 }

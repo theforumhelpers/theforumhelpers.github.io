@@ -37,7 +37,7 @@
     {
         "name": "Sigton",
         "id": "4268399",
-        "bio": "No Biography Provided",
+        "bio": "No Biography Provided.",
         "helped_code": false
     },
 
@@ -72,7 +72,7 @@
     {
 	"name": "Austinato",
         "id": "3783815",
-        "bio": "No Biography Provided.",
+        "bio": "Hello! I've been on the site for over seven years, and became one of the first managers of TFH. I mainly post on the Questions about Scratch and Requests forums, and occasionally the Suggestions forum as well. As you can tell, I have over 6000 forum posts!",
         "helped_code": false
     },
 
@@ -189,7 +189,7 @@
     },
 
     {
-	"name": "ShadowOfTheFuture",
+	"name": "-ShadowOfTheFuture-",
         "id": "24605721",
         "bio": "Hi! I'm a semi-active Scratcher who pops up on the forums every now and then, though not nearly as much as I used to.",
         "helped_code": false
@@ -294,6 +294,13 @@
     },
 
     {
+        "name": "BearSlothCoding",
+        "id": 45826642,
+        "bio": "Hey, I'm BSC. I used to be active in QaS and Suggestions but now school has left me only posting weird two to three paragraph almost essays no one asked for in TIRAP.",
+        "helped_code": false
+    },
+
+    {
         "name": "xXRedTheCoderXx",
         "id": 25035668,
         "bio": "Hi there! My name is xXRedTheCoderXx, but you can just call me Red. I like to make games and help others out on the forums. Feel free to say hi on my profile. Scratch on! ^^",
@@ -332,6 +339,13 @@
         "name": "Bluebatstar",
         "id": 10684376,
         "bio": "Hi, I'm Bluebatstar. I make games on Scratch, and I like to think they're high quality, and are (more importantly) fun to play. I go in QaS too. Oh, and outside of that I like Walking, Nintendo, Golf, Paddleboarding, and Game Soundtracks. (Interesting selection, I know.) Oh, and I love Scolipede.",
+        "helped_code": false
+    },
+
+    {
+        "name": "jeffalo",
+        "id": 34018398,
+        "bio": "admin panel enthusiast",
         "helped_code": false
     }
 ]
