@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<embed type="text/html" src="../resources/header.html" style="width:100%; height:70px; margin-bottom:-5px">
+		<header id="header"></header>
 
 		<div class="credits_content">
 			<h1>Contributors</h1>
@@ -27,11 +27,11 @@
 			<h3>Interested in contibuting? Visit our <a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink">GitHub Repository</a>!</h3>
 		</div>
 
-		<embed type="text/html" src="../resources/footer.html" style="width:100%; height:110px; margin-bottom:-5px">
-
+		<footer id="footer"></footer>
+		<script src="../resources/imports.js" onload='reference("../")'></script>
 		<script>
 			var contributors = ["Accio1", "leahcimto", "NilsTheBest", "Nambaseking01", "shefwerld", "FunctionalMetatable", "ShadowOfTheFuture", "Shluffy", "bremea", "awesome-llama", "CodeGuy92", "jeffalo", "MTM828", "The64thCucumber"]
-
+      
 			var i=0
 			var content = ""
 			while (i < contributors.length) {
