@@ -47,6 +47,10 @@ function getOcular(name) {
 			else {
 				document.getElementById(name+"Ocular").style.display = "none";
 			}
+			if (document.getElementById(name+"Status").innerText === "" && data.color != undefined) {
+				document.getElementById(name+"Ocular").style.backgroundColor = data.color;
+				console.log(1);
+			}
 		});
 }
 
