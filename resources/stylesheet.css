@@ -25,7 +25,7 @@ a:hover:not(.nav_button):hover {
 	}
 
 /*navbar*/
-.nav_content {
+header {
 	background: #31ACBA;
 	color: white;
 	font-size: 20px;
@@ -37,14 +37,19 @@ a:hover:not(.nav_button):hover {
 .nav_homeicon {
 	padding: 3px;
 	float: left;
+	height: 70px;
+	width: 70px;
+	box-sizing: border-box;
 	}
 
 .nav_title {
 	float: left;
+	width: 50%;
+	height: 100%;
 	margin-top: 0px;
 	padding-top: 10px;
 	padding-left: 20px;
-	margin-bottom:0px
+	margin-bottom: 0px;
 	}
 
 .nav_button {
@@ -64,6 +69,71 @@ a:hover:not(.nav_button):hover {
 	background-color: #056472;
 	}
 
+.expandableDropdown {
+	background-color: #31ACBA;
+	display: none;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image: url("expandable.svg")
+}
+
+.expandableLink {
+	display: none;
+	background-color: #31ACBA;
+	font-size: 16px;
+	color: white;
+	padding: 10px 5px 10px 5px;
+	width: 150px;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	height: 50px;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.expandableDropdown:hover {
+	background-image: url("arrow.svg"); /*TODO add an animation for a less abrupt change*/
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 60px;
+}
+
+.expandableDropdown:hover .expandableLink {
+	display: inline;
+	position: relative;
+	top: 60px;
+	left: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+	/*Resize Text*/
+	.nav_title {
+		word-wrap: break-word;
+		font-size: calc(30px - calc(1.2vh - 1vw));
+	}
+
+	header {
+		height: auto;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 22px
+	}
+
+	/*Hide nav links*/
+	.nav_button {
+		display: none;
+	}
+
+	/*Show dropdown instead*/
+	.expandableDropdown {
+		display: inline;
+	}
+}
 /*navbar*/
 
 /*Main Page*/
