@@ -17,13 +17,15 @@ function reference(link) {
 
 	const footerContent = `
 	<div class="footer_content">
-		<p>
+		<div class = "FHULinkDiv">
 			<a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a>
-			<br>
+		</div>
+		<div class = "FHULinkDiv">
 			<a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a>
-			<br>
+		</div>
+		<div class = "FHULinkDiv">
 			Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png">
-		</p>
+		</div>
 	</div>`
 	document.getElementById("footer").innerHTML = footerContent;
 }
