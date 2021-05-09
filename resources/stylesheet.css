@@ -292,6 +292,8 @@ hr {
 	box-sizing: border-box;
 	text-align: center;
 	font-family: Arial, sans-serif;
-	}
+	line-height: 30px;
+	height: auto;
+}
 
 /*Footer*/
