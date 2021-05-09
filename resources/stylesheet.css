@@ -292,12 +292,8 @@ hr {
 	box-sizing: border-box;
 	text-align: center;
 	font-family: Arial, sans-serif;
+	line-height: 30px;
 	height: auto;
-	}
-.FHULinkDiv {
-	padding-top: 3px;
-	padding-bottom: 3px;
-	/* allows for customizable padding, without weird margins */
 }
 
 /*Footer*/
