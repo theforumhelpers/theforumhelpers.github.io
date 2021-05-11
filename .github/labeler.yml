@@ -1,11 +1,11 @@
-pr - status:\ unreviewed:
+pr - status%3A unreviewed:
   - any: ['*']
 
-type:\ Forum Helpers List:
+type%3A Forum Helpers List:
   - forumhelpers/curators.json
   - forumhelpers/managers.json
   
-type:\ documentation:
+type%3A documentation:
   - README.md
   - LICENSE
   - .github/**/*
