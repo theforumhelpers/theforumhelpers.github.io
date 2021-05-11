@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Discussion
+    url: https://github.com/theforumhelpers/theforumhelpers.github.io/discussions/new
+    about: Open up a discussion
+  - name: Question
+    url: https://github.com/theforumhelpers/theforumhelpers.github.io/discussions/new?category=q-a
+    about: Ask a question

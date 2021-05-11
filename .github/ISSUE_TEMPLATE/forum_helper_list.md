@@ -2,7 +2,7 @@
 name: List of Forum Helpers
 about: Create a report of something that needs to be changed with the List of Forum Helpers page (adding users, changing bios, etc.)
 title: 'Forum Helpers List: '
-labels: 'Forum Helpers List'
+labels: 'type: Forum Helpers List'
 assignees: 'leahcimto'
 
 ---
