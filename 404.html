@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="resources/stylesheet.css">
 	</head>
 	<body>
-		<embed type="text/html" src="resources/header.html" style="width:100%; height:70px; margin-bottom:-5px">
+		<header id="header"></header>
 		<div class="lost_title">
 			<p>404 – Page Not Found</p>
 		</div>
@@ -16,5 +16,6 @@
 			<p>Hmmm... looks like you're lost. But don't worry! The magic taco can help you find your way back to the homepage. Just click on it!</p>
 			<a href="/" class="FHULink" alt="Magic Taco" title="Click me!"><img src="resources/Taco-wizard.svg"></a>
 		</div>
+		<script src="resources/imports.js" onload="reference('./');"></script>
 	</body>
 </html>
