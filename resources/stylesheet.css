@@ -127,10 +127,7 @@ header {
 	}
 
 	header {
-		height: auto;
-		box-sizing: border-box;
-		display: inline-block;
-		font-size: 22px
+		font-size: 22px;
 	}
 
 	/*Hide nav links*/
