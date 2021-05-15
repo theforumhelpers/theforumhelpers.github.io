@@ -81,13 +81,13 @@ function checkUser() {
 		searchBar.style.borderColor = "red";
 		searchButton.style.borderColor = "red";
 		searchButton.disabled = true;
-		searchButton.title = "Invald Username";
+		searchButton.title = "Invalid Username";
 	}
 	else {
 		searchBar.style.borderColor = "black"
 		searchButton.style.borderColor = "black";
 		searchButton.disabled = true;
-		searchButton.title = "Invald Username";
+		searchButton.title = "Invalid Username";
 	}
 }
 
