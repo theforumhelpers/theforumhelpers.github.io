@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="Description" content="The list of all the Forum Helpers who are in the Scratch Forum Helpers studio, as well as their biographies.">
 	</head>
-	
+
 	<body onload="getData('managers')">
 	<header id="header"></header>
 
@@ -28,6 +28,15 @@
 		<br>
 		<p class="forumhelpers_header">There are currently <span id="managersNumber"></span> Managers and <span id="curatorsNumber"></span> Curators in our studio, for a total of <span id="totalNumber"></span> members.</p>
 		<!--<h4 style="margin-left: 10px;"><img src="/resources/coder.png" alt="coder" style="width:30px;height:30px;vertical-align:middle"> Indicates that that person has helped code the website.</h4>-->
+
+		<br>
+
+		<div class="searchBlock">
+			<h3>Search for a Forum Helper</h3>
+			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser()">
+			<button id="searchButton" onclick="searchUser()" disabled title="Invalid Username">Search</button>
+		</div>
+
 		<div class="forumhelpers_navblock">
 			<h3><a href="#top" class="FHULink">Top</a></h3>
 			<h3><a href="#managers" class="FHULink">Managers</a></h3>

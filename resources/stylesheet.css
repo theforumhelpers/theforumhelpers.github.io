@@ -162,10 +162,11 @@ header {
 /*Forum Helpers List*/
 .forumhelpers_content {
 	font-family: Arial, sans-serif;
+	margin-left: 20px;
 	}
 
 hr {
-	margin: 0px 20px 0px 20px;
+	margin: 0px 20px 0px 0px;
 	}
 
 .forumhelpers_navblock {
@@ -185,13 +186,45 @@ hr {
 	}
 }
 
+#searchBar {
+	padding: 10px;
+	width: 40%;
+	height: 50px;
+	border-radius: 10px 0px 0px 10px;
+	border: 4px solid black;
+	outline: none;
+	box-sizing: border-box;
+	border-right: none;
+}
+
+#searchButton {
+	padding: 10px;
+	height: 50px;
+	width: 10%;
+	min-width: 100px;
+	border-radius: 0px 10px 10px 0px;
+	border: 4px solid black;
+	box-sizing: border-box;
+	margin-left: -7px;
+	border-left: none;
+	background-color: #31ACBA;
+	color: white;
+}
+
+#searchButton:hover {
+	background-color: #56c4d1;
+}
+
+#searchButton:disabled, #searchButton:disabled:hover {
+	background-color: grey;
+}
+
 .forumhelpers_header {
 	text-align: center;
 	}
 
 .forumhelpers_subheaders{
 	width: fit-content;
-	margin-left: 20px;
 	background: #31ACBA;
 	padding: 10px;
 	border-radius: 10px;
@@ -199,7 +232,6 @@ hr {
 
 .profileContainer {
 	min-height: 130px;
-	margin-left: 20px;
 	}
 
 .profileName {
