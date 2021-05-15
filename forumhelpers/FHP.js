@@ -10,7 +10,7 @@ function getData(dataSet) {
 				var bio = data[j].bio;
 				var section = document.getElementById(dataSet+"List").innerHTML;
 				var addition = `
-				<div class="profileContainer" id="${name}">
+				<div class="profileContainer" id="${name.toUpperCase()}">
 					<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
 					<div class="profileInner">
 						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
@@ -26,7 +26,7 @@ function getData(dataSet) {
 				else if (j == data.length-1) {
 					document.getElementById("totalNumber").innerHTML = parseInt(document.getElementById("managersNumber").innerHTML) + parseInt(document.getElementById("curatorsNumber").innerHTML);
 				}
-				grabDelay = grabDelay + 500;
+				grabDelay = grabDelay + 1000;
 				getOcular(name);
 				setTimeout(getCount, grabDelay, name);
 			}
@@ -62,4 +62,39 @@ function getCount(name) {
 			var posts = data.counts.total.count;
 			document.getElementById(name+"Posts").innerText = " - "+posts+" Posts";
 		});
+}
+
+
+//Search for a user
+var searchBar = document.getElementById("searchBar")
+var searchButton = document.getElementById("searchButton")
+
+function checkUser() {
+	var searchedUser = searchBar.value.toUpperCase();
+	if (document.getElementById(searchedUser) != undefined) {
+		searchBar.style.borderColor = "green";
+		searchButton.style.borderColor = "green";
+		searchButton.disabled = false;
+		searchButton.title = "Search!";
+	}
+	else if (searchedUser != "") {
+		searchBar.style.borderColor = "red";
+		searchButton.style.borderColor = "red";
+		searchButton.disabled = true;
+		searchButton.title = "Invald Username";
+	}
+	else {
+		searchBar.style.borderColor = "black"
+		searchButton.style.borderColor = "black";
+		searchButton.disabled = true;
+		searchButton.title = "Invald Username";
+	}
+}
+
+function searchUser() {
+	console.log("Hi")
+	var searchedUser = searchBar.value.toUpperCase();
+	if (document.getElementById(searchedUser) != undefined) {
+		document.getElementById(searchedUser).scrollIntoView();
+	}
 }
