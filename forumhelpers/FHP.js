@@ -92,7 +92,6 @@ function checkUser() {
 }
 
 function searchUser() {
-	console.log("Hi")
 	var searchedUser = searchBar.value.toUpperCase();
 	if (document.getElementById(searchedUser) != undefined) {
 		document.getElementById(searchedUser).scrollIntoView();
