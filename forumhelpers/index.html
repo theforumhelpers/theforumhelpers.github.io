@@ -6,8 +6,18 @@
 		<link rel="stylesheet" type="text/css" href="../resources/stylesheet.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="Description" content="The list of all the Forum Helpers who are in the Scratch Forum Helpers studio, as well as their biographies.">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FGN5P806VX"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-FGN5P806VX');
+		</script>
 	</head>
-	
+
 	<body onload="getData('managers')">
 	<header id="header"></header>
 
@@ -39,6 +49,8 @@
 		<h1 class="forumhelpers_subheaders" id="curators">Curators</h1>
 		<div id="curatorsList"></div>
 	</div>
+
+	<div class="privacyWarning" id="privacyWarning"></div>
 
 	<footer id="footer"></footer>
 	<script src="../resources/imports.js" onload='reference("../")'></script>
