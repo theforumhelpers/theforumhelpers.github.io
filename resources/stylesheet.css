@@ -156,7 +156,6 @@ header {
 	margin-left: 10%;
 	margin-right: 10%;
 	}
-
 /*Main Page*/
 
 /*Forum Helpers List*/
@@ -303,6 +302,43 @@ hr {
 }
 /*Credits*/
 
+/*Privacy*/
+.privacy_content {
+	color: black;
+	font-size: 20px;
+	width: 100%;
+	margin-top: 0px;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.privacyWarning {
+	font-family: Arial, sans-serif;
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	bottom: 0px;
+	background-color: #fff959;
+	text-align: center;
+}
+
+.privacyWarning:empty {
+	display: none;
+}
+
+.privacyButton {
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100px;
+}
+
+.privacyButton:hover {
+	background-color: lightgrey;
+}
+/*Privacy*/
+
 /*404 (had to use lost since css won't use numbers at the start of class names*/
 .lost_title {
 	color:black;
@@ -330,7 +366,7 @@ hr {
 	box-sizing: border-box;
 	text-align: center;
 	font-family: Arial, sans-serif;
-	line-height: 30px;
+	line-height: 10px;
 	height: auto;
 }
 

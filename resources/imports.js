@@ -17,11 +17,36 @@ function reference(link) {
 
 	const footerContent = `
 	<div class="footer_content">
-			<a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a>
-			<br>
-			<a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a>
-			<br>
-			Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png">
+			<p><a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a></p>
+			<p><a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a></p>
+			<p>Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png"></p>
+			<p style="font-size: 12px;">This site uses Google Analytics. Check out our <a href="${link}privacy/" class="FHULink" target="_parent">Privacy Policy</a> for more information</p>
 	</div>`
 	document.getElementById("footer").innerHTML = footerContent;
+
+	const privacyContent = `
+	<p style="margin:0px;">This site uses Google Analytics.<br>Check out our <a href="${link}privacy/" class="FHULink" target="_parent">Privacy Policy</a> for more information.</p><br>
+	<button class="privacyButton" onclick="acceptPrivacy()">Okay</button> <button class="privacyButton" onclick="denyPrivacy()">Leave Site</button>`
+	var currentDate = new Date();
+	var currentMonth = currentDate.getMonth();
+	//var currentDay = currentDate.getDate();
+	var storedDate = new Date(localStorage.getItem("FHacceptedDate"));
+	var storedMonth = storedDate.getMonth() ?? 100;
+	//var storedDay = storedDate.getDate() ?? 100;
+	if (currentMonth != storedMonth /*|| storedDay+7 < currentDay*/) {
+		document.getElementById("privacyWarning").innerHTML = privacyContent;
+	}
+}
+
+function acceptPrivacy() {
+	var setDate = new Date();
+	localStorage.setItem("FHacceptedAnalytics", "true");
+	localStorage.setItem("FHacceptedDate", setDate);
+	document.getElementById("privacyWarning").style.display = "none";
+}
+
+function denyPrivacy() {
+	localStorage.removeItem("FHacceptedAnalytics");
+	localStorage.removeItem("FHacceptedDate");
+	window.location.href = "https://scratch.mit.edu/studios/3688309/";
 }
