@@ -1,6 +1,6 @@
 function getData(dataSet) {
 	var grabDelay = 0
-	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
+	fetch("../forumhelpers/"+dataSet+".json")
 		.then(response => response.json())
 		.then(data => {
 			document.getElementById(dataSet+"Number").innerHTML = data.length;
