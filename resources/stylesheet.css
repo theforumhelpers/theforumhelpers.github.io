@@ -63,7 +63,7 @@ header {
 	font-size: 16px;
 	color: white;
 	transition-duration: 0.4s;
-	padding: 25px 5px 25px 5px;
+	padding: 25px 15px 25px 15px;
 	text-decoration: none;
 	text-align: center;
 	float: right;
@@ -116,7 +116,7 @@ header {
 	left: 10px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1220px) {
 	/*Resize Text*/
 	.nav_title {
 		word-wrap: break-word;
