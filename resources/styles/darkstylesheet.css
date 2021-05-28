@@ -1,0 +1,382 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	margin:0;
+	background: #333838;
+	}
+
+a {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+a:visited:not(.nav_button):visited  {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: underline;
+	}
+
+a:hover:not(.nav_button):hover {
+	color: blue;
+	background-color: inherit;
+	text-decoration: underline;
+	}
+
+/*navbar*/
+header {
+	background: #1b2424;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	height: 70px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	}
+
+.nav_homeicon {
+	padding: 3px;
+	float: left;
+	height: 70px;
+	width: 70px;
+	box-sizing: border-box;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}
+
+.nav_title {
+	float: left;
+	width: 50%;
+	height: 100%;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-bottom: 0px;
+	}
+
+.nav_button {
+	background-color: #1b2424;
+	font-size: 16px;
+	color: white;
+	transition-duration: 0.4s;
+	padding: 25px 5px 25px 5px;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	height: inherit;
+	box-sizing: border-box;
+	}
+
+.nav_button:hover {
+	background-color: #303f3f;
+	}
+
+.expandableDropdown {
+	background-color: #1b2424;
+	display: none;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image: url("expandable.svg")
+}
+
+.expandableLink {
+	display: none;
+	background-color: #1b2424;
+	font-size: 16px;
+	color: white;
+	padding: 10px 5px 10px 5px;
+	width: 150px;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	height: 50px;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.expandableDropdown:hover {
+	background-image: url("arrow.svg"); /*TODO add an animation for a less abrupt change*/
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 60px;
+}
+
+.expandableDropdown:hover .expandableLink {
+	display: inline;
+	position: relative;
+	top: 60px;
+	left: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+	/*Resize Text*/
+	.nav_title {
+		word-wrap: break-word;
+		font-size: calc(30px - calc(1.2vh - 1vw));
+	}
+
+	header {
+		height: auto;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 22px
+	}
+
+	/*Hide nav links*/
+	.nav_button {
+		display: none;
+	}
+
+	/*Show dropdown instead*/
+	.expandableDropdown {
+		display: inline;
+	}
+}
+/*navbar*/
+
+/*Main Page*/
+.home_content {
+	color: #959c93;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Arial, sans-serif;
+	}
+ h1 {
+   color: white;
+ }
+ h2{
+   color: white;
+ }
+ h3{
+   color: white;
+ }
+.home_answers {
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+/*Main Page*/
+
+/*Forum Helpers List*/
+.forumhelpers_content {
+	font-family: Arial, sans-serif;
+	margin-left: 20px;
+  color: #959c93;
+	}
+
+hr {
+	margin: 0px 20px 0px 0px;
+	}
+
+.forumhelpers_navblock {
+	border: 2px solid white;
+	width: 100px;
+	height: 150px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	text-align: center;
+	background: #0d1111;
+	}
+
+@media only screen and (max-width: 800px) {
+	.forumhelpers_navblock {
+		display: none;
+	}
+}
+
+#searchBar {
+	padding: 10px;
+	width: 40%;
+	height: 50px;
+	border-radius: 10px 0px 0px 10px;
+	border: 4px solid white;
+	outline: none;
+	box-sizing: border-box;
+	border-right: none;
+}
+
+#searchButton {
+	padding: 10px;
+	height: 50px;
+	width: 10%;
+	min-width: 100px;
+	border-radius: 0px 10px 10px 0px;
+	border: 4px solid black;
+	box-sizing: border-box;
+	margin-left: -7px;
+	border-left: none;
+	background-color: #1b2424;
+	color: white;
+}
+
+#searchButton:hover {
+	background-color: #1b2424;
+}
+
+#searchButton:disabled, #searchButton:disabled:hover {
+	background-color: grey;
+}
+
+.forumhelpers_header {
+	text-align: center;
+	}
+
+.forumhelpers_subheaders{
+	width: fit-content;
+	background:  #1b2424;
+	padding: 10px;
+	border-radius: 10px;
+	}
+
+.profileContainer {
+	min-height: 130px;
+	}
+
+.profileName {
+	font-family: Arial, sans-serif;
+	}
+
+.profileInner {
+	display: grid;
+	grid-template-columns: auto calc(100vw - 30vw);
+	grid-template-rows: minmax(min-content, max-content);
+	justify-content: start;
+	align-content: start;
+}
+
+.profilePicture {
+	float: left;
+  	border-radius: 10px;
+	margin-right: 10px;
+	height: 60px;
+ 	width: 60px;
+	}
+
+.profileBio {
+	margin: 0px 20px 10px 0px;
+	text-align: left;
+	}
+
+.ocularStatusBox {
+	border: 5px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	margin-right:20%;
+	width: fit-content;
+}
+ /*Forum Helpers List*/
+
+/*Credits*/
+.credits_content {
+	color: #959c93;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Arial, sans-serif;
+	}
+
+.credits_people {
+	display: flex;
+	padding: 10px 15%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.credits_block {
+	padding: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+
+.credits_pfp {
+	border-radius: 10px;
+	width: 100px;
+}
+
+.credits_link {
+	color: #959c93;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*Credits*/
+
+/*Privacy*/
+.privacy_content {
+	color: #959c93;
+	font-size: 20px;
+	width: 100%;
+	margin-top: 0px;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.privacyWarning {
+	font-family: Arial, sans-serif;
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	bottom: 0px;
+	background-color: #007500;
+	text-align: center;
+}
+
+.privacyWarning:empty {
+	display: none;
+}
+
+.privacyButton {
+	border: 3px solid #959c93;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100px;
+}
+
+.privacyButton:hover {
+	background-color: lightgrey;
+}
+/*Privacy*/
+
+/*404 (had to use lost since css won't use numbers at the start of class names*/
+.lost_title {
+	color:white;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.lost_content {
+	color:#959c93;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+
+}
+/*Footer*/
+.footer_content {
+	background: #1b2424;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	padding: 10px;
+	height: 110px;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	line-height: 10px;
+	height: auto;
+}
+
+/*Footer*/

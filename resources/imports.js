@@ -20,6 +20,7 @@ function reference(link) {
 			<p><a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a></p>
 			<p><a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a></p>
 			<p>Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png"></p>
+      <button onclick="switchTheme()" style="border: none; background-color: transparent; color: white; font-size: 20px;">Switch Theme</button>
 			<p style="font-size: 12px;">This site uses Google Analytics. Check out our <a href="${link}privacy/" class="FHULink" target="_parent">Privacy Policy</a> for more information</p>
 	</div>`
 	document.getElementById("footer").innerHTML = footerContent;
@@ -50,3 +51,44 @@ function denyPrivacy() {
 	localStorage.removeItem("FHacceptedDate");
 	window.location.href = "https://scratch.mit.edu/studios/3688309/";
 }
+function switchTheme() {
+  var theme = gC("theme");
+  if (theme != "dark") {
+      sC("theme", "dark", 1460);
+  } else {
+      sC("theme", "normal", 1460);
+  }
+  let themea = gC("theme");
+  styleSwitch(themea);
+}
+function styleSwitch(a) {
+  var se = document.getElementById("style")
+  if (a == "dark") {
+      se.setAttribute("href", "../resources/styles/darkstylesheet.css");
+  } else {
+      se.setAttribute("href", "../resources/styles/stylesheet.css");
+  };
+}
+function gC(name) {
+  var n = name + "=";
+  var dc = decodeURIComponent(document.cookie);
+  var ca = dc.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(n.length, c.length);
+    }
+  }
+  return "";
+}
+function sC(name, setTo, expiring) {
+  var day = new Date();
+  day.setTime(day.getTime() + (expiring*24*60*60*1000));
+  var xd = "expires="+ day.toUTCString();
+  document.cookie = name + "=" + setTo + ";" + xd + ";path=/";
+}
+styleSwitch(gC("theme"));
+console.log(gC("theme"));
