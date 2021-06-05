@@ -1,63 +1,124 @@
 <!DOCTYPE html>
-<html lang=en>
-	<head>
-		<title>Contributors</title>
-		<link rel="shortcut icon" type="image/png" href="../resources/favicon.png">
-		<link rel="stylesheet" type="text/css" href="../resources/stylesheet.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Description" content="List of people who helped develop this site">
+<html lang="en">
+  <head>
+    <title>Contributors</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../resources/favicon.png"
+    />
+    <link rel="stylesheet" type="text/css" href="../resources/stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="List of people who helped develop this site"
+    />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197061964-2"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-197061964-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		gtag('config', 'UA-197061964-2');
-		</script>
-	</head>
+      gtag("config", "UA-197061964-2");
+    </script>
+  </head>
 
-	<body>
-		<header id="header"></header>
+  <body>
+    <header id="header"></header>
 
-		<div class="credits_content">
-			<h1>Contributors</h1>
-			<h2>Thank you to all of the following people who helped make this site possible.</h2>
-			<div class="credits_people" id="credits_people">
+    <div class="credits_content">
+      <h1>Contributors</h1>
+      <h2>
+        Thank you to all of the following people who helped make this site
+        possible.
+      </h2>
+      <div class="credits_people" id="credits_people"></div>
 
-			</div>
+      <h2>
+        Thank you to the following services and their contributors that help
+        make this site possible.
+      </h2>
+      <p>
+        <a href="https://ocular.jeffalo.net/" class="FHULink"
+          >Ocular by Jeffalo</a
+        >
+        - Used to get Ocular Statuses for the List of Forum Helpers Page.
+      </p>
+      <p>
+        <a href="https://scratchdb.lefty.one/" class="FHULink"
+          >ScratchDB by DatOneLefty</a
+        >
+        - Used to get post counts for the List of Forum Helpers Page.
+      </p>
+      <p>
+        <a href="https://analytics.google.com/analytics/web/" class="FHULink"
+          >Google Analytics</a
+        >
+        - Used to get statistics about the usage of the site.
+      </p>
 
-			<h2>Thank you to the following services and their contributors that help make this site possible.</h2>
-			<p><a href="https://ocular.jeffalo.net/" class="FHULink">Ocular by Jeffalo</a> - Used to get Ocular Statuses for the List of Forum Helpers Page.</p>
-			<p><a href="https://scratchdb.lefty.one/" class="FHULink">ScratchDB by DatOneLefty</a> - Used to get post counts for the List of Forum Helpers Page.</p>
-			<p><a href="https://analytics.google.com/analytics/web/" class="FHULink">Google Analytics</a> - Used to get statistics about the usage of the site.</p>
+      <br />
+      <h3>
+        Thank you additionally to everyone who submitted biographies for our
+        <a
+          href="https://theforumhelpers.github.io/forumhelpers/"
+          class="FHULink"
+          >List of Forum Helpers Page</a
+        >.
+      </h3>
+      <h3>
+        Interested in contributing? Visit our
+        <a
+          href="https://github.com/theforumhelpers/theforumhelpers.github.io"
+          class="FHULink"
+          >GitHub Repository</a
+        >!
+      </h3>
+    </div>
 
-			<br>
-			<h3>Thank you additionally to everyone who submitted biographies for our <a href="https://theforumhelpers.github.io/forumhelpers/" class="FHULink">List of Forum Helpers Page</a>.</h3>
-			<h3>Interested in contributing? Visit our <a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink">GitHub Repository</a>!</h3>
-		</div>
+    <div class="privacyWarning" id="privacyWarning"></div>
 
-		<div class="privacyWarning" id="privacyWarning"></div>
+    <footer id="footer"></footer>
+    <script src="../resources/imports.js" onload='reference("../")'></script>
+    <script>
+      var contributors = [
+        "Accio1",
+        "leahcimto",
+        "NilsTheBest",
+        "Nambaseking01",
+        "shefwerld",
+        "FunctionalMetatable",
+        "ShadowOfTheFuture",
+        "Shluffy",
+        "bremea",
+        "gosoccerboy5",
+        "TheColaber",
+        "awesome-llama",
+        "CodeGuy92",
+        "jeffalo",
+        "MTM828",
+        "The64thCucumber",
+      ];
 
-		<footer id="footer"></footer>
-		<script src="../resources/imports.js" onload='reference("../")'></script>
-		<script>
-			var contributors = ["Accio1", "leahcimto", "NilsTheBest", "Nambaseking01", "shefwerld", "FunctionalMetatable", "ShadowOfTheFuture", "Shluffy", "bremea", "gosoccerboy5", "TheColaber", "awesome-llama", "CodeGuy92", "jeffalo", "MTM828", "The64thCucumber"]
-
-			var i=0
-			var content = ""
-			while (i < contributors.length) {
-				var name = contributors[i]
-				var tempContent =
-					`<div class="credits_block">
+      var i = 0;
+      var content = "";
+      while (i < contributors.length) {
+        var name = contributors[i];
+        var tempContent = `<div class="credits_block">
 					<a href="https://github.com/${name}" class="credits_link"><img src="https://github.com/${name}.png?size=100" class="credits_pfp" alt="${name}'s Profile Picture"><br>
 					<p>${name}</p></a>
-				</div>`
-				content = content + tempContent
-				i = i+1
-			}
-			document.getElementById("credits_people").innerHTML = content;
-		</script>
-	</body>
+				</div>`;
+        content = content + tempContent;
+        i = i + 1;
+      }
+      document.getElementById("credits_people").innerHTML = content;
+    </script>
+  </body>
 </html>
