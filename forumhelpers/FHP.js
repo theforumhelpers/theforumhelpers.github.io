@@ -78,8 +78,8 @@ function checkUser() {
 		searchButton.title = "Search!";
 	}
 	else if (searchedUser != "") {
-		searchBar.style.borderColor = "red";
-		searchButton.style.borderColor = "red";
+		searchBar.style.borderColor = "#cc0000";
+		searchButton.style.borderColor = "#cc0000";
 		searchButton.disabled = true;
 		searchButton.title = "Invalid Username";
 	}

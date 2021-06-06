@@ -1,9 +1,33 @@
 /* font import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+html.lightMode {
+	--primary: #B7E4E2;
+	--secondary: #31ACBA;
+	--secondaryHover: #056472;
+	--textPrimary: black;
+	--textSecondary: white;
+	--linkHover: blue;
+	--searchBar: white;
+	--saturation: 100%;
+}
+
+html.darkMode {
+	--primary: #121212;
+	--secondary: #1f1f1f;
+	--secondaryHover: #121212;
+	--textPrimary: #C4C4C4;
+	--textSecondary: #C4C4C4;
+	--linkHover: #a1c6ff;
+	--searchBar: #1f1f1f;
+	--saturation: 60%;
+}
+
 body {
 	margin: 0;
 	background: #b7e4e2;
+	margin:0;
+	background: var(--primary);
 }
 
 a {
@@ -19,15 +43,15 @@ a:visited:not(.nav_button):visited {
 }
 
 a:hover:not(.nav_button):hover {
-	color: blue;
+	color: var(--linkHover);
 	background-color: inherit;
 	text-decoration: underline;
 }
 
 /* navbar */
 header {
-	background: #31acba;
-	color: white;
+	background: var(--secondary);
+	color: var(--textSecondary);
 	font-size: 20px;
 	width: 100%;
 	height: 70px;
@@ -40,6 +64,7 @@ header {
 	height: 70px;
 	width: 70px;
 	box-sizing: border-box;
+	filter: saturate(var(--saturation));
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
@@ -59,9 +84,9 @@ header {
 }
 
 .nav_button {
-	background-color: #31acba;
+	background-color: var(--secondary);
 	font-size: 16px;
-	color: white;
+	color: var(--textSecondary);
 	transition-duration: 0.4s;
 	padding: 25px 5px 25px 5px;
 	text-decoration: none;
@@ -72,11 +97,11 @@ header {
 }
 
 .nav_button:hover {
-	background-color: #056472;
+	background-color: var(--secondaryHover);
 }
 
 .expandableDropdown {
-	background-color: #31acba;
+	background-color: var(--secondary);
 	display: none;
 	width: 50px;
 	height: 50px;
@@ -88,7 +113,7 @@ header {
 
 .expandableLink {
 	display: none;
-	background-color: #31acba;
+	background-color: var(--secondary);
 	font-size: 16px;
 	color: white;
 	padding: 10px 5px 10px 5px;
@@ -144,7 +169,7 @@ header {
 
 /* Main Page */
 .homeContent {
-	color: black;
+	color: var(--textPrimary);
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
@@ -162,6 +187,7 @@ header {
 .forumHelpersContent {
 	font-family: Arial, sans-serif;
 	margin-left: 20px;
+	color: var(--textPrimary);
 }
 
 hr {
@@ -176,7 +202,7 @@ hr {
 	right: 5px;
 	bottom: 5px;
 	text-align: center;
-	background: #b7e4e2;
+	background: var(--primary);
 }
 
 @media only screen and (max-width: 800px) {
@@ -194,6 +220,8 @@ hr {
 	outline: none;
 	box-sizing: border-box;
 	border-right: none;
+	background-color: var(--searchBar);
+	color: var(--textPrimary);
 }
 
 #searchButton {
@@ -206,12 +234,12 @@ hr {
 	box-sizing: border-box;
 	margin-left: -7px;
 	border-left: none;
-	background-color: #31acba;
-	color: white;
+	background-color: var(--secondary);
+	color: var(--textSecondary);
 }
 
 #searchButton:hover {
-	background-color: #56c4d1;
+	background-color: var(--secondaryHover);
 }
 
 #searchButton:disabled,
@@ -225,7 +253,7 @@ hr {
 
 .forumHelpersSubheaders {
 	width: fit-content;
-	background: #31acba;
+	background: var(--secondary);
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -251,7 +279,8 @@ hr {
 	border-radius: 10px;
 	margin-right: 10px;
 	height: 60px;
-	width: 60px;
+ 	width: 60px;
+	filter: saturate(var(--saturation))
 }
 
 .profileBio {
@@ -265,12 +294,14 @@ hr {
 	padding: 5px;
 	margin-right: 20%;
 	width: fit-content;
+	filter: saturate(var(--saturation));
 }
 /* /Forum Helpers List */
 
 /* Credits */
 .creditsContent {
-	color: black;
+	color: var(--textPrimary);
+
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
@@ -294,10 +325,12 @@ hr {
 .creditsProfilePicture {
 	border-radius: 10px;
 	width: 100px;
+	filter: saturation(var(--saturation));
 }
 
 .creditsLink {
-	color: black;
+	color: inherit;
+
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -305,7 +338,7 @@ hr {
 
 /* Privacy */
 .privacyContent {
-	color: black;
+	color: var(--textPrimary);
 	font-size: 20px;
 	width: 100%;
 	margin-top: 0px;
@@ -336,13 +369,14 @@ hr {
 }
 
 .privacyButton:hover {
-	background-color: lightgrey;
+	background-color: (lightgrey);
+	color: black;
 }
 /* /Privacy */
 
 /* 404 (had to use lost since css won't use numbers at the start of class names) */
 .lostTitle {
-	color: black;
+	color: var(--textPrimary);
 	text-align: center;
 	font-size: 30px;
 	font-family: Arial, sans-serif;
@@ -350,17 +384,21 @@ hr {
 }
 
 .lostContent {
-	color: black;
+	color: var(--textPrimary);
 	text-align: center;
 	font-size: 20px;
 	font-family: Arial, sans-serif;
+}
+
+.taco {
+	filter: saturate(var(--saturation))
 }
 /* /404 */
 
 /* Footer */
 .footer_content {
-	background: #31acba;
-	color: white;
+	background: var(--secondary);
+	color: var(--textSecondary);
 	font-size: 20px;
 	width: 100%;
 	padding: 10px;
@@ -371,5 +409,11 @@ hr {
 	line-height: 10px;
 	height: auto;
 }
+.changeTheme {
+	display: block;
+}
 
+.changeTheme:hover {
+	cursor: pointer;
+}
 /* /Footer */
