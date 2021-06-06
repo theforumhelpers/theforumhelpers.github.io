@@ -21,10 +21,10 @@
 	<body>
 		<header id="header"></header>
 
-		<div class="credits_content">
+		<div class="creditsContent">
 			<h1>Contributors</h1>
 			<h2>Thank you to all of the following people who helped make this site possible.</h2>
-			<div class="credits_people" id="credits_people">
+			<div class="creditsPeople" id="creditsPeople">
 
 			</div>
 
@@ -45,19 +45,19 @@
 		<script>
 			var contributors = ["Accio1", "leahcimto", "NilsTheBest", "Nambaseking01", "shefwerld", "FunctionalMetatable", "ShadowOfTheFuture", "Shluffy", "bremea", "gosoccerboy5", "TheColaber", "awesome-llama", "CodeGuy92", "jeffalo", "MTM828", "The64thCucumber"]
 
-			var i=0
+			var i = 0
 			var content = ""
 			while (i < contributors.length) {
 				var name = contributors[i]
 				var tempContent =
-					`<div class="credits_block">
-					<a href="https://github.com/${name}" class="credits_link"><img src="https://github.com/${name}.png?size=100" class="credits_pfp" alt="${name}'s Profile Picture"><br>
+					`<div class="creditsBlock">
+					<a href="https://github.com/${name}" class="creditsLink"><img src="https://github.com/${name}.png?size=100" class="creditsProfilePicture" alt="${name}'s Profile Picture"><br>
 					<p>${name}</p></a>
 				</div>`
 				content = content + tempContent
 				i = i+1
 			}
-			document.getElementById("credits_people").innerHTML = content;
+			document.getElementById("creditsPeople").innerHTML = content;
 		</script>
 	</body>
 </html>

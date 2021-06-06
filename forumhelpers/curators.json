@@ -363,13 +363,6 @@
         "helped_code": false
     },
 
-	{
-        "name": "imfh",
-        "id": 3272838,
-        "bio": "Hey, I'm imfh. I've been on the Scratch forums since late 2018 and you'll mostly see me in Help With Scripts. When making my own projects, I like coding things I have to puzzle out, often involving cloud or some kind of math. Outside of Scratch, I enjoy programming in other languages (such as Python) and also reading.",
-        "helped_code": false
-    },
-
 
 	{
         "name": "mtech22",
@@ -480,7 +473,7 @@
   {
         "name": "Nezon",
         "id": 57770375,
-        "bio": "No Biography Provided.",
+        "bio": "bio",
         "helped_code": false
   },
 
