@@ -88,7 +88,7 @@ header {
 	font-size: 16px;
 	color: var(--textSecondary);
 	transition-duration: 0.4s;
-	padding: 25px 5px 25px 5px;
+	padding: 25px 10px 25px 10px;
 	text-decoration: none;
 	text-align: center;
 	float: right;
@@ -141,7 +141,7 @@ header {
 	left: 10px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1154px) {
 	/* Resize Text */
 	.navTitle {
 		word-wrap: break-word;
