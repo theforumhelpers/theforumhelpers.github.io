@@ -8,6 +8,7 @@ html.lightMode {
 	--textPrimary: black;
 	--textSecondary: white;
 	--linkHover: blue;
+	--searchBar: white;
 	--saturation: 100%;
 }
 
@@ -18,6 +19,7 @@ html.darkMode {
 	--textPrimary: #C4C4C4;
 	--textSecondary: #C4C4C4;
 	--linkHover: #a1c6ff;
+	--searchBar: #1f1f1f;
 	--saturation: 60%;
 }
 
@@ -216,7 +218,7 @@ hr {
 	outline: none;
 	box-sizing: border-box;
 	border-right: none;
-	background-color: var(--secondary);
+	background-color: var(--searchBar);
 	color: var(--textPrimary);
 }
 
@@ -230,12 +232,12 @@ hr {
 	box-sizing: border-box;
 	margin-left: -7px;
 	border-left: none;
-	background-color: var(--secondaryHover);
+	background-color: var(--secondary);
 	color: var(--textSecondary);
 }
 
 #searchButton:hover {
-	background-color: var(--secondary);
+	background-color: var(--secondaryHover);
 }
 
 #searchButton:disabled, #searchButton:disabled:hover {
