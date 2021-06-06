@@ -24,7 +24,7 @@ function reference(link) {
 	document.getElementById("header").innerHTML = headerContent;
 
 	const footerContent = `
-	<div class="footer_content">
+	<div class="footerContent">
 		<br>
 		<a onclick="changeTheme()" class="changeTheme">Change Theme</a><br>
 		<p><a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a></p>
