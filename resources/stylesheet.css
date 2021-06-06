@@ -36,13 +36,13 @@ a {
 	text-decoration: underline;
 }
 
-a:visited:not(.nav_button):visited {
+a:visited:not(.navButton):visited {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
 }
 
-a:hover:not(.nav_button):hover {
+a:hover:not(.navButton):hover {
 	color: var(--linkHover);
 	background-color: inherit;
 	text-decoration: underline;
@@ -396,7 +396,7 @@ hr {
 /* /404 */
 
 /* Footer */
-.footer_content {
+.footerContent {
 	background: var(--secondary);
 	color: var(--textSecondary);
 	font-size: 20px;
