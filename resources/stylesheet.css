@@ -142,8 +142,8 @@ header {
 }
 
 @media only screen and (max-width: 1154px) {
-	/*Resize Text*/
-	.nav_title {
+	/* Resize Text */
+	.navTitle {
 		word-wrap: break-word;
 		font-size: calc(30px - calc(1.2vh - 1vw));
 	}
