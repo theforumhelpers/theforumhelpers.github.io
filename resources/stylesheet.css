@@ -1,5 +1,5 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html.lightMode {
 	--primary: #B7E4E2;
@@ -24,9 +24,11 @@ html.darkMode {
 }
 
 body {
+	margin: 0;
+	background: #b7e4e2;
 	margin:0;
 	background: var(--primary);
-	}
+}
 
 a {
 	color: inherit;
@@ -34,29 +36,29 @@ a {
 	text-decoration: underline;
 }
 
-a:visited:not(.nav_button):visited  {
+a:visited:not(.navButton):visited {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
-	}
+}
 
-a:hover:not(.nav_button):hover {
+a:hover:not(.navButton):hover {
 	color: var(--linkHover);
 	background-color: inherit;
 	text-decoration: underline;
-	}
+}
 
-/*navbar*/
+/* navbar */
 header {
 	background: var(--secondary);
 	color: var(--textSecondary);
 	font-size: 20px;
 	width: 100%;
 	height: 70px;
-	font-family: 'Montserrat', Arial, sans-serif;
-	}
+	font-family: "Montserrat", Arial, sans-serif;
+}
 
-.nav_homeicon {
+.navHomeIcon {
 	padding: 3px;
 	float: left;
 	height: 70px;
@@ -69,9 +71,9 @@ header {
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	}
+}
 
-.nav_title {
+.navTitle {
 	float: left;
 	width: 50%;
 	height: 100%;
@@ -79,9 +81,9 @@ header {
 	padding-top: 10px;
 	padding-left: 20px;
 	margin-bottom: 0px;
-	}
+}
 
-.nav_button {
+.navButton {
 	background-color: var(--secondary);
 	font-size: 16px;
 	color: var(--textSecondary);
@@ -92,11 +94,11 @@ header {
 	float: right;
 	height: inherit;
 	box-sizing: border-box;
-	}
+}
 
-.nav_button:hover {
+.navButton:hover {
 	background-color: var(--secondaryHover);
-	}
+}
 
 .expandableDropdown {
 	background-color: var(--secondary);
@@ -106,7 +108,7 @@ header {
 	float: right;
 	margin-right: 10px;
 	margin-top: 10px;
-	background-image: url("expandable.svg")
+	background-image: url("expandable.svg");
 }
 
 .expandableLink {
@@ -140,8 +142,8 @@ header {
 }
 
 @media only screen and (max-width: 1100px) {
-	/*Resize Text*/
-	.nav_title {
+	/* Resize Text */
+	.navTitle {
 		word-wrap: break-word;
 		font-size: calc(30px - calc(1.2vh - 1vw));
 	}
@@ -150,49 +152,49 @@ header {
 		height: auto;
 		box-sizing: border-box;
 		display: inline-block;
-		font-size: 22px
+		font-size: 22px;
 	}
 
-	/*Hide nav links*/
-	.nav_button {
+	/* Hide nav links */
+	.navButton {
 		display: none;
 	}
 
-	/*Show dropdown instead*/
+	/* Show dropdown instead */
 	.expandableDropdown {
 		display: inline;
 	}
 }
-/*navbar*/
+/* /navbar */
 
-/*Main Page*/
-.home_content {
+/* Main Page */
+.homeContent {
 	color: var(--textPrimary);
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
 	font-family: Arial, sans-serif;
-	}
+}
 
-.home_answers {
+.homeAnswers {
 	margin-left: 10%;
 	margin-right: 10%;
-	}
-/*Main Page*/
+}
+/* /Main Page */
 
-/*Forum Helpers List*/
-.forumhelpers_content {
+/* Forum Helpers List */
+.forumHelpersContent {
 	font-family: Arial, sans-serif;
 	margin-left: 20px;
 	color: var(--textPrimary);
-	}
+}
 
 hr {
 	margin: 0px 20px 0px 0px;
-	}
+}
 
-.forumhelpers_navblock {
+.forumHelpersNavBlock {
 	border: 2px solid black;
 	width: 100px;
 	height: 150px;
@@ -201,10 +203,10 @@ hr {
 	bottom: 5px;
 	text-align: center;
 	background: var(--primary);
-	}
+}
 
 @media only screen and (max-width: 800px) {
-	.forumhelpers_navblock {
+	.forumHelpersNavBlock {
 		display: none;
 	}
 }
@@ -240,28 +242,29 @@ hr {
 	background-color: var(--secondaryHover);
 }
 
-#searchButton:disabled, #searchButton:disabled:hover {
+#searchButton:disabled,
+#searchButton:disabled:hover {
 	background-color: grey;
 }
 
-.forumhelpers_header {
+.forumHelpersHeader {
 	text-align: center;
-	}
+}
 
-.forumhelpers_subheaders{
+.forumHelpersSubheaders {
 	width: fit-content;
 	background: var(--secondary);
 	padding: 10px;
 	border-radius: 10px;
-	}
+}
 
 .profileContainer {
 	min-height: 130px;
-	}
+}
 
 .profileName {
 	font-family: Arial, sans-serif;
-	}
+}
 
 .profileInner {
 	display: grid;
@@ -273,66 +276,68 @@ hr {
 
 .profilePicture {
 	float: left;
-  	border-radius: 10px;
+	border-radius: 10px;
 	margin-right: 10px;
 	height: 60px;
  	width: 60px;
 	filter: saturate(var(--saturation))
-	}
+}
 
 .profileBio {
 	margin: 0px 20px 10px 0px;
 	text-align: left;
-	}
+}
 
 .ocularStatusBox {
 	border: 5px solid black;
 	border-radius: 10px;
 	padding: 5px;
-	margin-right:20%;
+	margin-right: 20%;
 	width: fit-content;
 	filter: saturate(var(--saturation));
 }
- /*Forum Helpers List*/
+/* /Forum Helpers List */
 
-/*Credits*/
-.credits_content {
+/* Credits */
+.creditsContent {
 	color: var(--textPrimary);
+
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
 	font-family: Arial, sans-serif;
-	}
+}
 
-.credits_people {
+.creditsPeople {
 	display: flex;
 	padding: 10px 15%;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.credits_block {
+.creditsBlock {
 	padding: 20px;
 	width: 250px;
 	box-sizing: border-box;
 }
 
-.credits_pfp {
+.creditsProfilePicture {
 	border-radius: 10px;
 	width: 100px;
 	filter: saturation(var(--saturation));
 }
 
-.credits_link {
+.creditsLink {
 	color: inherit;
+
 	text-decoration: none;
 	font-weight: bold;
 }
-/*Credits*/
+/* /Credits */
 
-/*Privacy*/
-.privacy_content {
+/* Privacy */
+.privacyContent {
 	color: var(--textPrimary);
 	font-size: 20px;
 	width: 100%;
@@ -367,10 +372,10 @@ hr {
 	background-color: (lightgrey);
 	color: black;
 }
-/*Privacy*/
+/* /Privacy */
 
-/*404 (had to use lost since css won't use numbers at the start of class names*/
-.lost_title {
+/* 404 (had to use lost since css won't use numbers at the start of class names) */
+.lostTitle {
 	color: var(--textPrimary);
 	text-align: center;
 	font-size: 30px;
@@ -378,7 +383,7 @@ hr {
 	font-weight: bold;
 }
 
-.lost_content {
+.lostContent {
 	color: var(--textPrimary);
 	text-align: center;
 	font-size: 20px;
@@ -388,8 +393,10 @@ hr {
 .taco {
 	filter: saturate(var(--saturation))
 }
-/*Footer*/
-.footer_content {
+/* /404 */
+
+/* Footer */
+.footerContent {
 	background: var(--secondary);
 	color: var(--textSecondary);
 	font-size: 20px;
@@ -409,4 +416,4 @@ hr {
 .changeTheme:hover {
 	cursor: pointer;
 }
-/*Footer*/
+/* /Footer */
