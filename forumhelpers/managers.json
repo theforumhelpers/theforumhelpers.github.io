@@ -327,13 +327,20 @@
         "bio": "the person's bio below me is false",
         "helped_code": false
     },
+	
+    {
+        "name": "imfh",
+        "id": 3272838,
+        "bio": "Hey, I'm imfh. I've been on the Scratch forums since late 2018 and you'll mostly see me in Help With Scripts. When making my own projects, I like coding things I have to puzzle out, often involving cloud or some kind of math. Outside of Scratch, I enjoy programming in other languages (such as Python) and also reading.",
+        "helped_code": false
+    },
 
     {
         "name": "leahcimto",
         "id": 14126232,
-        "bio": "Hi! I am leahcimto. You can find me mostly in Questions about Scratch and Suggestions. I normaly can be found looking for duplicates and answering questions about Scratch. I also enjoy editing the Scratch Wiki.",
+        "bio": "Hi! I used to be active in the forums, but am not too active anymore as I have moved on to other things in the Scratch Community and have started learning new things. On Scratch now I normally review projects for the welcoming committee and do other random stuff. Feel free to say hello on my profile :)",
         "helped_code": false
-      },
+    },
 
     {
         "name": "Bluebatstar",
