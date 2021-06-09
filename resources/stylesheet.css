@@ -413,11 +413,19 @@ hr {
 	line-height: 10px;
 	height: auto;
 }
-.changeTheme {
-	display: block;
+
+#changeTheme {
+	background-color: #2f75a3;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 10px;
+	text-decoration: none;
 }
 
-.changeTheme:hover {
+#changeTheme:hover {
 	cursor: pointer;
+	color: #A1C6FF;
 }
 /* /Footer */

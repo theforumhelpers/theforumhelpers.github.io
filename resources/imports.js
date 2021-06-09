@@ -26,7 +26,7 @@ function reference(link) {
 	const footerContent = `
 	<div class="footerContent">
 		<br>
-		<a onclick="changeTheme()" class="changeTheme">Change Theme</a><br>
+		<a onclick="changeTheme()" class="changeTheme" id="changeTheme">Change Theme</a><br>
 		<p><a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a></p>
 		<p><a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a></p>
 		<p>Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png"></p>
