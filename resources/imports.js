@@ -1,5 +1,13 @@
 var theme = localStorage.getItem("siteTheme");
-if (theme == "light" || theme == null) {
+if (theme == null){
+	if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+		theme = "dark";
+	}
+	else {
+		theme = "light";
+	}
+}
+if (theme == "light") {
 	document.getElementsByTagName("html")[0].className = "lightMode";
 }
 else {
