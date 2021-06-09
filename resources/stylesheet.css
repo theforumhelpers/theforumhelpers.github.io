@@ -422,6 +422,7 @@ hr {
 	border-style: hidden;
 	border-radius: 10px;
 	display: inline-block;
+	user-select: none; /* Repeatedly cliking the button should not select it */
 }
 
 #changeTheme:hover {
