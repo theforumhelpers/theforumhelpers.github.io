@@ -5,7 +5,7 @@ if (theme == null){
 	theme = "system";
 }
 
-themeButton.innerHTML = "Change Theme (" + theme + ")";
+themeButton.innerHTML = `Change Theme (${theme})`;
 
 function checkSystemTheme() {
 	if (window.matchMedia('(prefers-color-scheme: dark)').matches){
@@ -62,5 +62,5 @@ function changeTheme() {
 	else {
 		document.getElementsByTagName("html")[0].className = theme + "Mode";
 	}
-	themeButton.innerHTML = "Change Theme (" + theme + ")";
+	themeButton.innerHTML = `Change Theme (${theme})`;
 }
