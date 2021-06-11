@@ -33,6 +33,8 @@ The whole issue template should be filled out when you make an issue. You can wr
 ## Use a Consistent Coding Style
 * Use tabs instead of spaces
 
+## Follow the Scratch Community Guidelines
+The [Scratch Community Guidelines](https://scratch.mit.edu/community_guidelines) apply here and must be followed when making contributions, and when discussing on issues, pull requests and discussions.
 
 ## References
 This document was adapted from a contribution guidelines template that briandk on GitHub made [here](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62).
