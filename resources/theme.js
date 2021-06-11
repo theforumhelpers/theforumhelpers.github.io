@@ -5,8 +5,6 @@ if (theme == null){
 	theme = "system";
 }
 
-themeButton.innerHTML = `Change Theme (${theme})`;
-
 function checkSystemTheme() {
 	if (window.matchMedia('(prefers-color-scheme: dark)').matches){
 		return "dark";
@@ -17,21 +15,11 @@ function checkSystemTheme() {
 }
 
 if (theme == "system") {
-	var systemTheme = checkSystemTheme();
-	if (systemTheme == "light") {
-		document.getElementsByTagName("html")[0].className = "lightMode";
-	}
-	else {
-		document.getElementsByTagName("html")[0].className = "darkMode";
-	}
-} 
-else if (theme == "light") {
-	document.getElementsByTagName("html")[0].className = "lightMode";
-} 
-else {
-	document.getElementsByTagName("html")[0].className = "darkMode";
+	setTheme("system")
 }
-
+else {
+	setTheme(theme)
+}
 
 function changeTheme() {
 	// Currently Available themes: system, light, dark
@@ -39,8 +27,7 @@ function changeTheme() {
 	var theme = localStorage.getItem("siteTheme");
 	var listOfThemes = ["system", "light", "dark"];
 	var indexOfCurrentTheme = listOfThemes.indexOf(theme);
-	console.log(theme);
-	
+
 	if (indexOfCurrentTheme < listOfThemes.length - 1){
 		theme = listOfThemes[indexOfCurrentTheme + 1];
 	}
@@ -48,19 +35,19 @@ function changeTheme() {
 		theme = listOfThemes[0];
 	}
 
-	localStorage.setItem("siteTheme", theme)
-
 	if (theme == "system"){
-		var systemTheme = checkSystemTheme();
-		if (systemTheme == "light") {
-			document.getElementsByTagName("html")[0].className = "lightMode";
-		}
-		else {
-			document.getElementsByTagName("html")[0].className = "darkMode";
-		}
+			setTheme("system")
 	}
 	else {
-		document.getElementsByTagName("html")[0].className = theme + "Mode";
+		setTheme(theme)
 	}
+}
+
+function setTheme(theme) {
+	localStorage.setItem("siteTheme", theme)
 	themeButton.innerHTML = `Change Theme (${theme})`;
+	if (theme == "system") {
+		var theme = checkSystemTheme()
+	}
+	document.getElementsByTagName("html")[0].className = theme + "Mode";
 }
