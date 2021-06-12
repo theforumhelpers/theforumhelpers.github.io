@@ -1,11 +1,3 @@
-var theme = localStorage.getItem("siteTheme");
-if (theme == "light" || theme == null) {
-	document.getElementsByTagName("html")[0].className = "lightMode";
-}
-else {
-	document.getElementsByTagName("html")[0].className = "darkMode";
-}
-
 function reference(link) {
 	const headerContent = `
 	<a href="${link}" target="_parent">
@@ -26,7 +18,7 @@ function reference(link) {
 	const footerContent = `
 	<div class="footerContent">
 		<br>
-		<a onclick="changeTheme()" class="changeTheme">Change Theme</a><br>
+		<a onclick="changeTheme()" class="changeTheme" id="changeTheme">Change Theme</a><br>
 		<p><a href="${link}contributors/" class="FHULink" target="_parent">Contributors</a></p>
 		<p><a href="https://github.com/theforumhelpers/theforumhelpers.github.io" class="FHULink" target="_parent">Github Repository</a></p>
 		<p>Be moist <img src="https://cdn.scratch.mit.edu/scratchr2/static/__4f1f321e080ee4987f163566ecc0dd26__/djangobb_forum/img/smilies/cool.png"></p>
@@ -59,17 +51,4 @@ function denyPrivacy() {
 	localStorage.removeItem("FHacceptedAnalytics");
 	localStorage.removeItem("FHacceptedDate");
 	window.location.href = "https://scratch.mit.edu/studios/3688309/";
-}
-
-function changeTheme() {
-	var theme = localStorage.getItem("siteTheme");
-	console.log(theme)
-	if (theme == "light" || theme == null) {
-		theme = "dark";
-	}
-	else {
-		theme = "light";
-	}
-	localStorage.setItem("siteTheme", theme)
-	document.getElementsByTagName("html")[0].className = theme + "Mode";
 }

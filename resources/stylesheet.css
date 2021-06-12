@@ -10,6 +10,9 @@ html.lightMode {
 	--linkHover: blue;
 	--searchBar: white;
 	--saturation: 100%;
+	--tertiary: #2f7299;
+	--tertiaryHover: #2c566e;
+	--textTertiary: #ffffff;
 }
 
 html.darkMode {
@@ -21,6 +24,8 @@ html.darkMode {
 	--linkHover: #a1c6ff;
 	--searchBar: #1f1f1f;
 	--saturation: 60%;
+	--tertiary: #3d4042;
+	--tertiaryHover: #27292c;
 }
 
 body {
@@ -413,11 +418,21 @@ hr {
 	line-height: 10px;
 	height: auto;
 }
-.changeTheme {
-	display: block;
+
+#changeTheme {
+	background-color: var(--tertiary);
+	text-decoration: none;
+	margin: 10px;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 10px;
+	display: inline-block;
+	user-select: none; /* Repeatedly cliking the button should not select it */
 }
 
-.changeTheme:hover {
+#changeTheme:hover {
 	cursor: pointer;
+	color: var(--textTertiary);
+	background-color: var(--tertiaryHover);
 }
 /* /Footer */
