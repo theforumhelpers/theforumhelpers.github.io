@@ -12,6 +12,7 @@ html.lightMode {
 	--saturation: 100%;
 	--tertiary: #2f7299;
 	--tertiaryHover: #2c566e;
+	--textTertiary: #ffffff;
 }
 
 html.darkMode {
@@ -431,7 +432,7 @@ hr {
 
 #changeTheme:hover {
 	cursor: pointer;
-	color: #A1C6FF;
+	color: var(--textTertiary);
 	background-color: var(--tertiaryHover);
 }
 /* /Footer */
