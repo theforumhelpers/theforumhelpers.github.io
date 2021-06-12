@@ -10,6 +10,8 @@ html.lightMode {
 	--linkHover: blue;
 	--searchBar: white;
 	--saturation: 100%;
+	--tertiary: #2f7299;
+	--tertiaryHover: #2c566e;
 }
 
 html.darkMode {
@@ -21,6 +23,8 @@ html.darkMode {
 	--linkHover: #a1c6ff;
 	--searchBar: #1f1f1f;
 	--saturation: 60%;
+	--tertiary: #3d4042;
+	--tertiaryHover: #27292c;
 }
 
 body {
@@ -415,7 +419,7 @@ hr {
 }
 
 #changeTheme {
-	background-color: #2f75a3;
+	background-color: var(--tertiary);
 	text-decoration: none;
 	margin: 10px;
 	padding: 20px;
@@ -428,5 +432,6 @@ hr {
 #changeTheme:hover {
 	cursor: pointer;
 	color: #A1C6FF;
+	background-color: var(--tertiaryHover);
 }
 /* /Footer */
