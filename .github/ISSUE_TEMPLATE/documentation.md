@@ -1,7 +1,7 @@
 ---
 name: Documentation
 about: Suggest updates to documentation (credits page, privacy policy, repository documentation, etc.)
-title: 'Forum Helpers List: '
+title: 'Documentation: '
 labels: 'type: documentation'
 assignees: 'Accio1'
 
