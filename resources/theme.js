@@ -45,7 +45,9 @@ function changeTheme() {
 
 function setTheme(theme) {
 	localStorage.setItem("siteTheme", theme)
-	themeButton.innerHTML = `Change Theme (${theme})`;
+	if (themeButton !== null) {
+		themeButton.innerHTML = `Change Theme (${theme})`;
+	}
 	if (theme == "system") {
 		var theme = checkSystemTheme()
 	}
