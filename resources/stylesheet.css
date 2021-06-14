@@ -28,6 +28,28 @@ html.darkMode {
 	--tertiaryHover: #27292c;
 }
 
+html.terminalMode {
+--primary: black
+--secondary: #333
+--secondaryHover: grey
+--textPrimary: green
+--textSecondary: darkish-blue
+--linkHover: yellow
+--searchBar: #ccc
+--saturation: 68%
+}
+
+html.scratchMode {
+--primary: #fcfcfc
+--secondary: #4d97fe
+--secondaryHover: #5686de
+--textPrimary: #565e75 
+--textSecondary: #ffffff
+--linkHover: #4180d7
+--searchBar: #ffffff
+--saturation: 100%
+}
+
 body {
 	margin: 0;
 	background: #b7e4e2;
