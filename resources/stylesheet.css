@@ -29,14 +29,16 @@ html.darkMode {
 }
 
 html.terminalMode {
---primary: black;
---secondary: #333;
---secondaryHover: grey;
---textPrimary: green;
---textSecondary: darkish-blue;
---linkHover: yellow;
---searchBar: #ccc;
---saturation: 68%;
+    --primary: #121212;
+    --secondary: #333;
+    --secondaryHover: #555;
+    --textPrimary: #32cd32;
+    --textSecondary: #90f;
+    --linkHover: #a1c6ff;
+    --searchBar: #222b2e;
+    --saturation: 60%;
+    --tertiary: #2a2b2d;
+    --tertiaryHover: #565a60;
 }
 
 html.scratchMode {
