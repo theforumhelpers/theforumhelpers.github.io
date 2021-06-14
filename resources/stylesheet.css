@@ -58,6 +58,10 @@ header {
 	font-family: "Montserrat", Arial, sans-serif;
 }
 
+button {
+	cursor: pointer;
+}
+
 .navHomeIcon {
 	padding: 3px;
 	float: left;
@@ -421,7 +425,3 @@ hr {
 	cursor: pointer;
 }
 /* /Footer */
-
-button {
-	cursor: pointer;
-}
