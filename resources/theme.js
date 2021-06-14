@@ -25,7 +25,7 @@ function changeTheme() {
 	// Currently Available themes: system, light, dark, scratch, terminal
 	// If you are adding a theme, please update the comment above and the array below
 	var theme = localStorage.getItem("siteTheme");
-	var listOfThemes = ["system", "light", "dark", "scratch", "terrminal"];
+	var listOfThemes = ["system", "light", "dark", "scratch", "terminal"];
 	var indexOfCurrentTheme = listOfThemes.indexOf(theme);
 
 	if (indexOfCurrentTheme < listOfThemes.length - 1){
