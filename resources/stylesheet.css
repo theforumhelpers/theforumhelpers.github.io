@@ -42,14 +42,16 @@ html.terminalMode {
 }
 
 html.scratchMode {
---primary: #fcfcfc;
---secondary: #4d97fe;
---secondaryHover: #5686de;
---textPrimary: #565e75;
---textSecondary: #ffffff;
---linkHover: #4180d7;
---searchBar: #ffffff;
---saturation: 100%;
+    --primary: #fcfcfc;
+    --secondary: #4d97fe;
+    --secondaryHover: #5686de;
+    --textPrimary: #565e75;
+    --textSecondary: #ffffff;
+    --linkHover: #4180d7;
+    --searchBar: #ffffff;
+    --saturation: 100%;
+    --tertiary: #4280D9;
+    --tertiaryhover: #2d65b3;
 }
 
 body {
