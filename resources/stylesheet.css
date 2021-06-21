@@ -53,6 +53,10 @@ a:hover:not(.navButton):hover {
 	text-decoration: underline;
 }
 
+button {
+	cursor: pointer;
+}
+
 /* navbar */
 header {
 	background: var(--secondary);
