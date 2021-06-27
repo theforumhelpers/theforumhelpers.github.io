@@ -26,32 +26,35 @@ html.darkMode {
 	--saturation: 60%;
 	--tertiary: #3d4042;
 	--tertiaryHover: #27292c;
-}
-
-html.terminalMode {
-    --primary: #121212;
-    --secondary: #333;
-    --secondaryHover: #555;
-    --textPrimary: #32cd32;
-    --textSecondary: #90f;
-    --linkHover: #a1c6ff;
-    --searchBar: #222b2e;
-    --saturation: 60%;
-    --tertiary: #2a2b2d;
-    --tertiaryHover: #565a60;
+	--textTertiary: #ffffff;
 }
 
 html.scratchMode {
-    --primary: #fcfcfc;
-    --secondary: #4d97fe;
-    --secondaryHover: #5686de;
-    --textPrimary: #565e75;
-    --textSecondary: #ffffff;
-    --linkHover: #4180d7;
-    --searchBar: #ffffff;
-    --saturation: 100%;
-    --tertiary: #4280D9;
-    --tertiaryHover: #2d65b3;
+	--primary: #fcfcfc;
+	--secondary: #4d97fe;
+	--secondaryHover: #4588e5;
+	--textPrimary: #565e75;
+	--textSecondary: #ffffff;
+	--linkHover: #4180d7;
+	--searchBar: #ffffff;
+	--saturation: 100%;
+	--tertiary: #4588e5;
+	--tertiaryHover: #3e79cc;
+	--textTertiary: #ffffff;
+}
+
+html.terminalMode {
+	--primary: #121212;
+	--secondary: #1f1f1f;
+	--secondaryHover: #121212;
+	--textPrimary: #32cd32;
+	--textSecondary: #32cd32;
+	--linkHover: #43a343;
+	--searchBar: #222b2e;
+	--saturation: 60%;
+	--tertiary: #3d4042;
+	--tertiaryHover: #27292c;
+	--textTertiary: #43a343;
 }
 
 body {
@@ -285,6 +288,7 @@ hr {
 .forumHelpersSubheaders {
 	width: fit-content;
 	background: var(--secondary);
+	color: var(--textSecondary);
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -310,7 +314,7 @@ hr {
 	border-radius: 10px;
 	margin-right: 10px;
 	height: 60px;
- 	width: 60px;
+	width: 60px;
 	filter: saturate(var(--saturation))
 }
 
