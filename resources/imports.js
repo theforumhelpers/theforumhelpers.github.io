@@ -52,9 +52,3 @@ function denyPrivacy() {
 	localStorage.removeItem("FHacceptedDate");
 	window.location.href = "https://scratch.mit.edu/studios/3688309/";
 }
-
-function getWebsitePath() {
-	
-
-	return websitePath;
-}
