@@ -46,6 +46,9 @@
 			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser(), updateUserChoice()" onkeydown="if (event.keyCode == 13); document.getElementById('searchButton').click()">
 			<button id="searchButton" onclick="searchUser()" disabled title="Invalid Username">Search</button>
 			<div id="searchOptions"></div>
+			<br>
+			<input type="checkbox" id="searchCheckbox" onchange="hideMatchingResults()">
+			<label for="searchCheckbox"> Only show matching results?</label>
 		</div>
 
 		<div class="forumHelpersNavBlock">
@@ -53,11 +56,12 @@
 			<h3><a href="#managers" class="FHULink">Managers</a></h3>
 			<h3><a href="#curators" class="FHULink">Curators</a></h3>
 		</div>
-
-		<h1 class="forumHelpersSubheaders" id="managers">Managers</h1>
-		<div id="managersList"></div>
-		<h1 class="forumHelpersSubheaders" id="curators">Curators</h1>
-		<div id="curatorsList"></div>
+		<div class="forumHelpersList" id="forumHelpersList">
+			<h1 class="forumHelpersSubheaders" id="managers">Managers</h1>
+			<div id="managersList"></div>
+			<h1 class="forumHelpersSubheaders" id="curators">Curators</h1>
+			<div id="curatorsList"></div>
+		</div>
 	</div>
 
 	<div class="privacyWarning" id="privacyWarning"></div>
