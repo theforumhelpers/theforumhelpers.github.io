@@ -43,7 +43,7 @@
 
 		<div class="searchBlock">
 			<h3>Search for a Forum Helper</h3>
-			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser(), updateUserChoice()">
+			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser(), updateUserChoice()" onkeydown="if (event.keyCode == 13); document.getElementById('searchButton').click()">
 			<button id="searchButton" onclick="searchUser()" disabled title="Invalid Username">Search</button>
 			<div id="searchOptions"></div>
 		</div>

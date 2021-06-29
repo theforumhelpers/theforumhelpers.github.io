@@ -1,13 +1,13 @@
-var membersList = []
+var membersList = [];
 function getData(dataSet) {
-	var grabDelay = 0
+	var grabDelay = 0;
 	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
 		.then(response => response.json())
 		.then(data => {
 			document.getElementById(dataSet+"Number").innerHTML = data.length;
 			for (j = 0; j < data.length; j++) {
 				var name = data[j].name;
-				membersList.push(name)
+				membersList.push(name);
 				var id = data[j].id;
 				var bio = data[j].bio;
 				var section = document.getElementById(dataSet+"List").innerHTML;
@@ -75,7 +75,7 @@ var searchOptions = [];
 function updateUserChoice() {
 	document.getElementById("searchOptions").innerHTML = "";
 	searchOptions = [];
-	var searchedLetters = searchBar.value
+	var searchedLetters = searchBar.value;
 	for (k = 0; k < membersList.length; k++) {
 		if (membersList[k].toUpperCase().includes(searchedLetters.toUpperCase()) && searchOptions.length != 5 && searchedLetters != "") {
 			searchOptions.push(membersList[k]);
@@ -94,6 +94,7 @@ function autoFill(fillValue) {
 	searchBar.value = fillValue;
 	checkUser();
 	updateUserChoice();
+	searchUser();
 }
 
 function checkUser() {
