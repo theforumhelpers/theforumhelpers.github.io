@@ -1,3 +1,4 @@
+var membersList = []
 function getData(dataSet) {
 	var grabDelay = 0
 	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
@@ -6,6 +7,7 @@ function getData(dataSet) {
 			document.getElementById(dataSet+"Number").innerHTML = data.length;
 			for (j = 0; j < data.length; j++) {
 				var name = data[j].name;
+				membersList.push(name)
 				var id = data[j].id;
 				var bio = data[j].bio;
 				var section = document.getElementById(dataSet+"List").innerHTML;
@@ -66,8 +68,33 @@ function getCount(name) {
 
 
 //Search for a user
-var searchBar = document.getElementById("searchBar")
-var searchButton = document.getElementById("searchButton")
+var searchBar = document.getElementById("searchBar");
+var searchButton = document.getElementById("searchButton");
+
+var searchOptions = [];
+function updateUserChoice() {
+	document.getElementById("searchOptions").innerHTML = "";
+	searchOptions = [];
+	var searchedLetters = searchBar.value
+	for (k = 0; k < membersList.length; k++) {
+		if (membersList[k].toUpperCase().includes(searchedLetters.toUpperCase()) && searchOptions.length != 5 && searchedLetters != "") {
+			searchOptions.push(membersList[k]);
+		}
+	}
+	for (k = 0; k < searchOptions.length; k++) {
+		var searchOptionBox = document.createElement("DIV");
+		searchOptionBox.innerText = searchOptions[k];
+		searchOptionBox.setAttribute("class", "searchOption");
+		searchOptionBox.setAttribute("onclick", `autoFill("${searchOptions[k]}")`);
+		document.getElementById("searchOptions").appendChild(searchOptionBox);
+	}
+}
+
+function autoFill(fillValue) {
+	searchBar.value = fillValue;
+	checkUser();
+	updateUserChoice();
+}
 
 function checkUser() {
 	var searchedUser = searchBar.value.toUpperCase();

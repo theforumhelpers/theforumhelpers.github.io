@@ -43,8 +43,9 @@
 
 		<div class="searchBlock">
 			<h3>Search for a Forum Helper</h3>
-			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser()">
+			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser(), updateUserChoice()">
 			<button id="searchButton" onclick="searchUser()" disabled title="Invalid Username">Search</button>
+			<div id="searchOptions"></div>
 		</div>
 
 		<div class="forumHelpersNavBlock">
