@@ -1,4 +1,6 @@
+var referenceLink = "";
 function reference(link) {
+	referenceLink = link;
 	const headerContent = `
 	<a href="${link}" target="_parent">
 		<img src="${link}resources/icon.png" width="64px" height="64px" class="navHomeIcon">
@@ -7,8 +9,7 @@ function reference(link) {
 	<a href="${link}forumhelpers" class="navButton" target="_parent">List Of Forum Helpers</a>
 	<a href="https://scratch.mit.edu/studios/3688309/" class="navButton" target="_blank">Our Scratch Studio</a>
 	<a href="https://theforumhelpers.github.io/QuickReply/" class="navButton" target="_parent">QuickReply</a>
-
-	<div class="expandableDropdown">
+	<div class="expandableDropdown" onmouseover="expandHeader()" onmouseout="collapseHeader()">
 		<a class="expandableLink" href="${link}forumhelpers">List Of Forum Helpers</a>
 		<a class="expandableLink" href="https://scratch.mit.edu/studios/3688309/">Our Scratch Studio</a>
 		<a class="expandableLink" href="https://theforumhelpers.github.io/QuickReply/">QuickReply</a>
@@ -51,4 +52,33 @@ function denyPrivacy() {
 	localStorage.removeItem("FHacceptedAnalytics");
 	localStorage.removeItem("FHacceptedDate");
 	window.location.href = "https://scratch.mit.edu/studios/3688309/";
+}
+
+var headerDropdown = document.getElementsByClassName("expandableDropdown")[0];
+function expandHeader() {
+	headerDropdown.style.backgroundImage = "url('" + referenceLink + "resources/arrow.svg')";
+	headerDropdown.style.height = "60px";
+	var headerLinks = document.getElementsByClassName("expandableLink");
+	for (k = 0; k < headerLinks.length; k++) {
+		headerLinks[k].style.display = "inline";
+	}
+}
+
+function collapseHeader() {
+	headerDropdown.style.backgroundImage = "url('" + referenceLink + "resources/expandable.svg')";
+	headerDropdown.style.height = "50px";
+	var headerLinks = document.getElementsByClassName("expandableLink");
+	for (k = 0; k < headerLinks.length; k++) {
+		headerLinks[k].style.display = "none";
+	}
+}
+
+window.ontouchstart = function(event) {
+	clickLocation = event.target.className;
+	if (clickLocation != "expandableDropdown" && clickLocation != "expandableLink") {
+		collapseHeader();
+	}
+	if (clickLocation == "expandableDropdown") {
+	    expandHeader();
+	}
 }

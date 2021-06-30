@@ -162,18 +162,6 @@ header {
 	height: 50px;
 	box-sizing: border-box;
 	margin: 0px;
-}
-
-.expandableDropdown:hover {
-	background-image: url("arrow.svg"); /*TODO add an animation for a less abrupt change*/
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 60px;
-}
-
-.expandableDropdown:hover .expandableLink {
-	display: inline;
 	position: relative;
 	top: 60px;
 	left: 10px;
