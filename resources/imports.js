@@ -54,8 +54,8 @@ function denyPrivacy() {
 	window.location.href = "https://scratch.mit.edu/studios/3688309/";
 }
 
-var headerDropdown = document.getElementsByClassName("expandableDropdown")[0];
 function expandHeader() {
+	var headerDropdown = document.getElementsByClassName("expandableDropdown")[0];
 	headerDropdown.style.backgroundImage = "url('" + referenceLink + "resources/arrow.svg')";
 	headerDropdown.style.height = "60px";
 	var headerLinks = document.getElementsByClassName("expandableLink");
@@ -65,6 +65,7 @@ function expandHeader() {
 }
 
 function collapseHeader() {
+	var headerDropdown = document.getElementsByClassName("expandableDropdown")[0];
 	headerDropdown.style.backgroundImage = "url('" + referenceLink + "resources/expandable.svg')";
 	headerDropdown.style.height = "50px";
 	var headerLinks = document.getElementsByClassName("expandableLink");
