@@ -71,9 +71,18 @@ function getCount(name) {
 //Search for a user
 var searchBar = document.getElementById("searchBar");
 var searchButton = document.getElementById("searchButton");
+var complexSearch
+var storedSearchOption = localStorage.getItem("complexSearch")
+if (storedSearchOption == false || storedSearchOption == null) {
+	document.getElementById("searchCheckbox").checked = false;
+	complexSearch = 0;
+}
+else {
+	document.getElementById("searchCheckbox").checked = true;
+	complexSearch = 1;
+}
 
 var searchOptions = [];
-var complexSearch = 0;
 function updateUserChoice() {
 	document.getElementById("searchOptions").innerHTML = "";
 	searchOptions = [];
@@ -124,9 +133,11 @@ function hideMatchingResults() {
 	var searchCheckbox = document.getElementById("searchCheckbox");
 	if (searchCheckbox.checked == true) {
 		complexSearch = 1;
+		localStorage.setItem("complexSearch", true);
 	}
 	else {
 		complexSearch = 0;
+		localStorage.setItem("complexSearch", false);
 	}
 	updateUserChoice();
 }
