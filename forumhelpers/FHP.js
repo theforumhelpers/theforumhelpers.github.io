@@ -1,11 +1,13 @@
+var membersList = [];
 function getData(dataSet) {
-	var grabDelay = 0
+	var grabDelay = 0;
 	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
 		.then(response => response.json())
 		.then(data => {
 			document.getElementById(dataSet+"Number").innerHTML = data.length;
 			for (j = 0; j < data.length; j++) {
 				var name = data[j].name;
+				membersList.push(name);
 				var id = data[j].id;
 				var bio = data[j].bio;
 				var section = document.getElementById(dataSet+"List").innerHTML;
@@ -17,8 +19,9 @@ function getData(dataSet) {
 						<p class="profileBio">${bio}</p>
 					</div>
 					<p class="ocularStatusBox" id="${name}Ocular" title="Ocular Status"><span class="ocularStatus" id="${name}Status">Loading Status...</span></p>
-				</div>
-				<hr>`;
+					<br>
+					<hr>
+				</div>`;
 				document.getElementById(dataSet+"List").innerHTML = section + addition;
 				if (j == data.length-1 && dataSet != "curators") {
 					getData("curators");
@@ -66,8 +69,78 @@ function getCount(name) {
 
 
 //Search for a user
-var searchBar = document.getElementById("searchBar")
-var searchButton = document.getElementById("searchButton")
+var searchBar = document.getElementById("searchBar");
+var searchButton = document.getElementById("searchButton");
+var complexSearch
+var storedSearchOption = localStorage.getItem("complexSearch")
+if (storedSearchOption == false || storedSearchOption == null) {
+	document.getElementById("searchCheckbox").checked = false;
+	complexSearch = 0;
+}
+else {
+	document.getElementById("searchCheckbox").checked = true;
+	complexSearch = 1;
+}
+
+var searchOptions = [];
+function updateUserChoice() {
+	document.getElementById("searchOptions").innerHTML = "";
+	searchOptions = [];
+	var searchedLetters = searchBar.value;
+	if (complexSearch == 0) {
+		for (k = 0; k < membersList.length; k++) {
+			if (membersList[k].toUpperCase().includes(searchedLetters.toUpperCase()) && searchOptions.length != 5 && searchedLetters != "") {
+				searchOptions.push(membersList[k]);
+			}
+			document.getElementById(membersList[k].toUpperCase()).style.display = "block";
+		}
+
+		for (k = 0; k < searchOptions.length; k++) {
+			var searchOptionBox = document.createElement("DIV");
+			searchOptionBox.innerText = searchOptions[k];
+			searchOptionBox.setAttribute("class", "searchOption");
+			searchOptionBox.setAttribute("onclick", `autoFill("${searchOptions[k]}")`);
+			document.getElementById("searchOptions").appendChild(searchOptionBox);
+		}
+	}
+	else if (complexSearch == 1) {
+		for (k = 0; k < membersList.length; k++) {
+			if (membersList[k].toUpperCase().includes(searchedLetters.toUpperCase())) {
+				searchOptions.push(membersList[k].toUpperCase());
+			}
+		}
+
+		var profileContainers = document.getElementById("forumHelpersList").getElementsByClassName("profileContainer");
+		for (k = 0; k < profileContainers.length; k++) {
+			if (searchOptions.includes(profileContainers[k].id) == false) {
+				profileContainers[k].style.display = "none";
+			}
+			else {
+				profileContainers[k].style.display = "block";
+			}
+		}
+	}
+}
+
+function autoFill(fillValue) {
+	searchBar.value = fillValue;
+	checkUser();
+	updateUserChoice();
+	searchUser();
+}
+
+function hideMatchingResults() {
+	var searchCheckbox = document.getElementById("searchCheckbox");
+	if (searchCheckbox.checked == true) {
+		complexSearch = 1;
+		localStorage.setItem("complexSearch", true);
+	}
+	else {
+		complexSearch = 0;
+		localStorage.setItem("complexSearch", false);
+	}
+	updateUserChoice();
+}
 
 function checkUser() {
 	var searchedUser = searchBar.value.toUpperCase();
