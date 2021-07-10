@@ -113,7 +113,9 @@ header {
 
 .navTitle {
 	float: left;
-	width: 50%;
+	width: 37.5%;
+	min-width: 180px;
+	box-sizing: border-box;
 	height: 100%;
 	margin-top: 0px;
 	padding-top: 10px;
@@ -147,6 +149,7 @@ header {
 	margin-right: 10px;
 	margin-top: 10px;
 	background-image: url("expandable.svg");
+	z-index: 100;
 }
 
 .expandableLink {
@@ -165,6 +168,7 @@ header {
 	position: relative;
 	top: 60px;
 	left: 10px;
+	z-index: 100;
 }
 
 @media only screen and (max-width: 1154px) {
@@ -180,15 +184,16 @@ header {
 		display: inline-block;
 		font-size: 22px;
 	}
+	@media only screen and (max-width: 1000px) {
+		/* Hide nav links */
+		.navButton {
+			display: none;
+		}
 
-	/* Hide nav links */
-	.navButton {
-		display: none;
-	}
-
-	/* Show dropdown instead */
-	.expandableDropdown {
-		display: inline;
+		/* Show dropdown instead */
+		.expandableDropdown {
+			display: inline;
+		}
 	}
 }
 /* /navbar */
@@ -201,6 +206,24 @@ header {
 	text-align: center;
 	margin-top: 0px;
 	font-family: Arial, sans-serif;
+}
+
+.homeAlert {
+	background-color: var(--secondary);
+	padding: 10px;
+	border-radius: 15px;
+	width: 60%;
+	margin: auto;
+	position: relative;
+	color: var(--textSecondary);
+	z-index: 5;
+}
+
+.closeAlert {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	margin: 5px;
 }
 
 .homeAnswers {
@@ -404,6 +427,19 @@ hr {
 	color: black;
 }
 /* /Privacy */
+
+/* Apply */
+.applyContent {
+	padding: 0px 30px;
+	box-sizing: border-box;
+	color: var(--textPrimary);
+	font-size: 20px;
+	width: 100%;
+	text-align: left;
+	margin-top: 0px;
+	font-family: Arial, sans-serif;
+}
+/* /Apply */
 
 /* 404 (had to use lost since css won't use numbers at the start of class names) */
 .lostTitle {
