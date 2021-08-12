@@ -33,7 +33,22 @@
 			}
 			else {
 				// then it is being run either on localhost or on the website. Then the baseHref will be window.location.origin
-				websitePath = window.location.origin;
+				// ...except it only works when it is deployed on the TFH website.
+				let path = window.location.host + window.location.pathname;
+				numberOfForwardSlashesInPath = findNumberOfForwardSlashes(path);
+			
+				let i = 0;
+				let forwardSlashesUntilNow = 0;
+				while (forwardSlashesUntilNow < numberOfForwardSlashesInPath) {
+					if (path[i] == '/') {
+						forwardSlashesUntilNow++;
+					}
+					websitePath += path[i];
+					i++;
+				}
+				console.log(websitePath)
+				websitePath = window.location.protocol + "//" + websitePath;
+				console.log(websitePath);
 			}
 			
 			document.getElementsByTagName("base")[0].setAttribute("href", websitePath);
