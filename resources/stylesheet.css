@@ -206,6 +206,7 @@ header {
 	text-align: center;
 	margin-top: 0px;
 	font-family: Arial, sans-serif;
+	min-height: calc(100vh - 305px);
 }
 
 .homeAlert {
