@@ -1,6 +1,6 @@
 ### Resolves:
 
-_What Github issue does this resolve (please include link)? Do NOT create a Pull Request for a major issue that you have not been assigned to unless you are a part of the editors team for this repo._
+_What Github issue does this resolve (please include link)? Do NOT create a Pull Request for a major issue that you have not been assigned to unless you are a part of the editors team for this repo. For more information, read the [CONTRIBUTING.md](CONTRIBUTING.md) file._
 
 ### Changes:
 
