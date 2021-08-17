@@ -2,4 +2,4 @@
 The main site for the Scratch group "The Forum Helpers".
 
 # Want to contribute?
-First, read the [CONTRIBUTING.md](CONTRIBUTING.md) to understand this repository's guidelines.
+First, read the [Contributing Guidelines](CONTRIBUTING.md) to understand how you can submit ideas and changes to this repository.
