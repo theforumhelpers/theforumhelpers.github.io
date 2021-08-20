@@ -86,6 +86,10 @@ button {
 	cursor: pointer;
 }
 
+a, button {
+    transition-duration: 0.4s;
+}
+
 /* navbar */
 header {
 	background: var(--secondary);
