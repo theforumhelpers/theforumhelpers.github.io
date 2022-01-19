@@ -147,20 +147,6 @@
     },
 
     {
-        "name": "Queer_Royalty",
-        "id": 69283539,
-        "bio": "B.anana A.nalogy N.oob S.arcastic",
-        "original": true
-    },
-
-    {
-        "name": "cs156175",
-        "id": 9229050,
-		"bio": "I joined the Forum Helpers back before it was even called that, and have been in it off-and-on since. I enjoy random generators, comics, idle games, RPGs, platformers, and puzzle games. I mostly help out on Questions About Scratch, Suggestions, and Help With Scripts.",
-        "original": true
-    },
-
-    {
         "name": "78ch3",
         "id": 22836585,
 		"bio": "No Biography Provided.",
@@ -424,5 +410,25 @@
         "id": 62358629,
         "bio": "No Biography Provided.",
         "original": false
+    },
+
+    {
+        "name": "banananology",
+        "id": 80536841,
+        "bio": "No Biography Provided.",
+        "original": true
+    },
+
+    {
+        "name": "rayli1123",
+        "id": 40398949,
+        "bio": "No Biography Provided.",
+        "original": false
+    },
+
+    {
+        "name": "D-ScratchNinja",
+        "id": 33988895,
+        "bio": "No Biography Provided."
     }
 ]
