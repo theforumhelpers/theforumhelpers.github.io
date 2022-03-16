@@ -408,7 +408,28 @@
     {
         "name": "Ham19-01-2011",
         "id": 60073507,
-        "bio": " Hello! I'm Ham19-01-2011! I post in the forums often, and I'm most active on the Suggestions forum, commenting and building on people's suggestions. I sometimes post in Help with Scripts as well, trying to help debug people's projects.",
+        "bio": "Hello! I'm Ham19-01-2011! I post in the forums often, and I'm most active on the Suggestions forum, commenting and building on people's suggestions. I sometimes post in Help with Scripts as well, trying to help debug people's projects.",
+        "og": "f"
+    },
+
+    {
+        "name": "VioletCalico",
+        "id": 24747628,
+        "bio": "Hello! I'm VioletCalico, an active forumer who mostly posts on Questions About Scratch and Suggestions! I also try to post on Bugs and Glitches and New Scratcher often.",
+        "og": "f"
+    },
+
+    {
+        "name": "I_LOVE_TO_MAKE_STUFF",
+        "id": 76636796,
+        "bio": "Hi, I love to make stuff (who would've guessed, right?) I try to be as helpful as I can and I am mostly active on the suggestions forums. I create simple projects based on simple concepts",
+        "og": "f"
+    },
+
+    {
+        "name": "qloakonscratch",
+        "id": 73537226,
+        "bio": "Hi! My name is qloakonscratch! I go by She/Her pronouns but am genderfluid. I am asexual and love posting constructive replies on the forums. I am 15. I am a huge nerd. I've been on Scratch for 8 years. That's all, I think.",
         "og": "f"
     }
 ]
