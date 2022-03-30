@@ -13,6 +13,7 @@ html.lightMode {
 	--tertiary: #2f7299;
 	--tertiaryHover: #2c566e;
 	--textTertiary: #ffffff;
+	--blur: 0px;
 }
 
 html.darkMode {
@@ -27,6 +28,7 @@ html.darkMode {
 	--tertiary: #3d4042;
 	--tertiaryHover: #27292c;
 	--textTertiary: #ffffff;
+	--blur: 0px;
 }
 
 html.scratchMode {
@@ -41,6 +43,7 @@ html.scratchMode {
 	--tertiary: #4588e5;
 	--tertiaryHover: #3e79cc;
 	--textTertiary: #ffffff;
+	--blur: 0px;
 }
 
 html.terminalMode {
@@ -55,6 +58,22 @@ html.terminalMode {
 	--tertiary: #3d4042;
 	--tertiaryHover: #27292c;
 	--textTertiary: #43a343;
+	--blur: 0px;
+}
+
+html.blurryMode {
+	--primary: #B7E4E2;
+	--secondary: #31ACBA;
+	--secondaryHover: #056472;
+	--textPrimary: black;
+	--textSecondary: white;
+	--linkHover: blue;
+	--searchBar: white;
+	--saturation: 100%;
+	--tertiary: #2f7299;
+	--tertiaryHover: #2c566e;
+	--textTertiary: #ffffff;
+	--blur: 3px;
 }
 
 body {
@@ -62,6 +81,7 @@ body {
 	background: #b7e4e2;
 	margin:0;
 	background: var(--primary);
+	filter: blur(var(--blur))
 }
 
 a {
