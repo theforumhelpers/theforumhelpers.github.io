@@ -97,7 +97,7 @@ header {
 	font-size: 20px;
 	width: 100%;
 	height: 70px;
-	font-family: "Montserrat", Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 }
 
 .navHomeIcon {
@@ -209,7 +209,7 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	min-height: calc(100vh - 305px);
 }
 
@@ -239,7 +239,7 @@ header {
 
 /* Forum Helpers List */
 .forumHelpersContent {
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	margin-left: 20px;
 	color: var(--textPrimary);
 }
@@ -346,7 +346,7 @@ hr {
 }
 
 .profileName {
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 }
 
 .profileInner {
@@ -389,7 +389,7 @@ hr {
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 }
 
 .creditsPeople {
@@ -429,13 +429,13 @@ hr {
 	font-size: 20px;
 	width: 100%;
 	margin-top: 0px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	box-sizing: border-box;
 	padding: 20px;
 }
 
 .privacyWarning {
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	position: fixed;
 	width: 100%;
 	padding: 10px;
@@ -470,7 +470,7 @@ hr {
 	width: 100%;
 	text-align: left;
 	margin-top: 0px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 }
 /* /Apply */
 
@@ -479,7 +479,7 @@ hr {
 	color: var(--textPrimary);
 	text-align: center;
 	font-size: 30px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	font-weight: bold;
 }
 
@@ -487,7 +487,7 @@ hr {
 	color: var(--textPrimary);
 	text-align: center;
 	font-size: 20px;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 }
 
 .taco {
@@ -505,7 +505,7 @@ hr {
 	height: 110px;
 	box-sizing: border-box;
 	text-align: center;
-	font-family: Arial, sans-serif;
+	font-family: Comic Sans MS, Arial, sans-serif;
 	line-height: 10px;
 	height: auto;
 }
