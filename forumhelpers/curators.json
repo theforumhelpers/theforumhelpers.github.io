@@ -84,13 +84,6 @@
     },
 
     {
-        "name": "wangat",
-        "id": 62007502,
-		"bio": "Hey I'm wangat! Scratch Contributor in the Wiki, forums, SDS, and other areas. 500+ posts. Mostly active in Questions about Scratch and Suggestions",
-        "og": "t"
-    },
-
-    {
         "name": "scratchykit5743",
         "id": 39136554,
 		"bio": "I'm Scratchykit. I code, draw, and forum. My other hobbies include suffering in middle school and drinking way too much sweet tea (and pethetically, that's about it.)",
@@ -445,6 +438,12 @@
         "id": 38125018,
         "bio": "Hi, I'm mbrick2; a Forumer who is mainly active in the Advance Topics and enjoys Javascript and Python",
         "og": "f"
-    }
-    
+    },
+
+    {
+		"name": "Nambaseking01",
+		"id": 32829133,
+		"bio": "Hi! My name is Nambaseking01 on many platforms on the internet but people prefer to call me 'Nammy'. You should too! My passions are writing articles and stories, learning a lot of programing languages (such as Scratch), playing the piano, and singing! I'm not extremely interested in the last two, but I still like them. If I start talking about myself, I'll keep on going! Stopping myself - and bye! :D",
+        "og": "t"
+	}
 ]
