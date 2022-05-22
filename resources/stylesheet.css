@@ -7,7 +7,7 @@ html.lightMode {
 	--secondaryHover: #056472;
 	--textPrimary: black;
 	--textSecondary: white;
-	--linkHover: blue;
+	--linkHover: #e8e8e8;
 	--searchBar: white;
 	--saturation: 100%;
 	--tertiary: #2f7299;
