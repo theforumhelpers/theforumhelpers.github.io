@@ -196,13 +196,6 @@
     },
 
     {
-        "name": "-EmeraldThunder-",
-        "id": 70349036,
-		"bio": "Hello, I am -EmeraldThunder- and I have a passion for coding. I am very active on the forums and occasionally on the wiki under my old accounts username.",
-        "og": "t"
-    },
-
-    {
         "name": "PaddlerGames",
         "id": 8071284,
 		"bio": "Hello! I'm PaddlerGames. I like to help out around Scratch in the forums whenever I can. I'm also a Past FPC, Past SDS Helper, Scratch Wiki Member, and have curated in a few Scratch Team owned studios before.",
@@ -227,13 +220,6 @@
         "name": "Kitt-Draw",
         "id": 62972802,
 		"bio": "A strange and interesting creature from the Kalos region",
-        "og": "t"
-    },
-
-    {
-        "name": "han614698",
-        "id": 41022482,
-		"bio": "I love foruming and that's all I really do! I have 2000+ posts and make 25+ each day.",
         "og": "t"
     },
 
@@ -336,13 +322,6 @@
     },
 
     {
-        "name": "-gr",
-        "id": 80604269,
-        "bio": "Probably one of the only active forumers with a three-letter username. QaS is really boring sometimes. Ocular is cool. 500+ posts. Comment Toast on my profile if you see this.",
-        "og": "f"
-    },
-
-    {
         "name": "helloworldbyeworld",
         "id": 61293737,
         "bio": "No Biography Provided.",
@@ -381,13 +360,6 @@
         "name": "god286",
         "id": 31530023,
         "bio": "Hello world",
-        "og": "f"
-    },
-
-    {
-        "name": "Prime689",
-        "id": 62358629,
-        "bio": "No Biography Provided.",
         "og": "f"
     },
 
@@ -445,5 +417,68 @@
 		"id": 32829133,
 		"bio": "Hi! My name is Nambaseking01 on many platforms on the internet but people prefer to call me 'Nammy'. You should too! My passions are writing articles and stories, learning a lot of programing languages (such as Scratch), playing the piano, and singing! I'm not extremely interested in the last two, but I still like them. If I start talking about myself, I'll keep on going! Stopping myself - and bye! :D",
         "og": "t"
-	}
+	},
+
+    {
+		"name": "historical_supa",
+		"id": 71825463,
+		"bio": "No Biography Provided.",
+        "og": "f"
+	},
+
+    {
+        "name": "Adzboy",
+        "id": 84839537,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "minikiwigeek2",
+        "id": 27872815,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "starhero5697",
+        "id": 36195325,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "musicROCKS013",
+        "id": 34853305,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "sharkode",
+        "id": 46685332,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "sharkode",
+        "id": 46685332,
+		"bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+        "name": "Maximouse",
+        "id": 16426047,
+		"bio": "No Biography Provided.",
+        "og": "t"
+    },
+
+    {
+        "name": "-EmeraldThunder-",
+        "id": 70349036,
+		"bio": "Hello, I am -EmeraldThunder- and I have a passion for coding. I am very active on the forums and occasionally on the wiki under my old accounts username.",
+        "og": "t"
+    }
 ]

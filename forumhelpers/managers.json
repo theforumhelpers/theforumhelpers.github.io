@@ -1,4 +1,11 @@
-[
+[   
+    {
+		"name": "Super_Scratch_Bros20",
+		"id": 35057879,
+		"bio": " Hi, I’m Super_Scratch_Bros20, but you can call me SSB20. I’m a forumer who wants to help however I can. I can be found on Questions about Scratch, Suggestions, and sometimes Things I’m Reading and Playing. If you have any questions, feel free to contact me. Scratch On!",
+        "og": "t"
+	},
+
     {
         "name": "CatsUnited",
         "id": 4100896,
@@ -166,13 +173,6 @@
     },
 
     {
-        "name": "Maximouse",
-        "id": 16426047,
-		"bio": "No Biography Provided.",
-        "og": "t"
-    },
-
-    {
         "name": "Chiroyce",
         "id": 58524660,
 		"bio": "Hello! I'm Chiroyce, a 13 year old boy from India who joined Scratch on the 25th of March, 2020, as I was bored staying at home and doing nothing. I love making unique projects that test the limits of Scratch to prove that anything is possible. I also love helping around in the forums, especially Bugs and Glitches & Advanced Topics. Outside Scratch, I'm a huge tech fan, I love reading books, playing cricket and programming in Python.",
@@ -186,24 +186,11 @@
         "og": "t"
     },
     
-    {
-		"name": "Super_Scratch_Bros20",
-		"id": 35057879,
-		"bio": " Hi, I’m Super_Scratch_Bros20, but you can call me SSB20. I’m a forumer who wants to help however I can. I can be found on Questions about Scratch, Suggestions, and sometimes Things I’m Reading and Playing. If you have any questions, feel free to contact me. Scratch On!",
-        "og": "t"
-	},
 
     {
         "name": "dertermenter",
         "id": 13778668,
 		"bio": "tHe pERsoN bELoW mE WilL hAVe A gOOd DAy ",
-        "og": "t"
-    },
-
-    {
-        "name": "dhuls",
-        "id": 44058862,
-		"bio": "No Biography Provided.",
         "og": "t"
     },
 
@@ -226,5 +213,62 @@
         "id": 62007502,
 		"bio": "Hey I'm wangat! Scratch Contributor in the Wiki, forums, SDS, and other areas. 500+ posts. Mostly active in Questions about Scratch and Suggestions",
         "og": "t"
+    },
+
+    {
+        "name": "Prime689",
+        "id": 62358629,
+        "bio": "No Biography Provided.",
+        "og": "f"
+    },
+
+    {
+		"name": "awesome-llama",
+		"id": 8832510,
+		"bio": "Majority of my forum posts are about helping others, in both Questions About Scratch and Help with Scripts. Having studied advanced mathematics and physics in high school (and graduating), I am able to answer many of the more technical questions asked on the forums. I joined Scratch back in 2015 and am still here, occasionally sharing random projects too.",
+        "og": "t"
+	},
+
+    {
+		"name": "helloworldbyeworld",
+		"id": 61293737,
+		"bio": "No Biography Provided.",
+        "og": "f"
+	},
+    
+    {
+		"name": "jackson49",
+		"id": 61293737,
+		"bio": "No Biography Provided.",
+        "og": "f"
+	},
+
+    {
+        "name": "-gr",
+        "id": 80604269,
+        "bio": "Probably one of the only active forumers with a three-letter username. QaS is really boring sometimes. Ocular is cool. 500+ posts. Comment Toast on my profile if you see this.",
+        "og": "f"
+    },
+
+    {
+        "name": "han614698",
+        "id": 41022482,
+		"bio": "I love foruming and that's all I really do! I have 2000+ posts and make 25+ each day.",
+        "og": "t"
+    },
+
+    {
+        "name": "DinoMaster20",
+        "id": 44985322,
+		"bio": "No Biography Provided.",
+        "og": "t"
+    },
+
+    {
+        "name": "dhuls",
+        "id": 44058862,
+		"bio": "No Biography Provided.",
+        "og": "t"
     }
+
 ]
