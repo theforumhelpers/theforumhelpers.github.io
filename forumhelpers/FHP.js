@@ -1,16 +1,17 @@
 var membersList = [];
+var curatorsList = [];
+var managersList = [];
 function getData(dataSet) {
 	var grabDelay = 0;
-	fetch("https://theforumhelpers.github.io/forumhelpers/"+dataSet+".json")
+	fetch("https://theforumhelperstest.herokuapp.com/api/users.php")
 		.then(response => response.json())
 		.then(data => {
-			document.getElementById(dataSet+"Number").innerHTML = data.length;
 			for (j = 0; j < data.length; j++) {
 				var name = data[j].name;
 				membersList.push(name);
 				var id = data[j].id;
 				var bio = data[j].bio;
-				var section = document.getElementById(dataSet+"List").innerHTML;
+				var role = data[j].role;
 				var addition = `
 				<div class="profileContainer" id="${name.toUpperCase()}">
 					<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
@@ -22,11 +23,19 @@ function getData(dataSet) {
 					<br>
 					<hr>
 				</div>`;
-				document.getElementById(dataSet+"List").innerHTML = section + addition;
-				if (j == data.length-1 && dataSet != "curators") {
-					getData("curators");
+				if (role == "m") {
+					var section = document.getElementById("managersList").innerHTML;
+					document.getElementById("managersList").innerHTML = section + addition;
+					managersList.push(name);
 				}
-				else if (j == data.length-1) {
+				else {
+					var section = document.getElementById("curatorsList").innerHTML;
+					document.getElementById("curatorsList").innerHTML = section + addition;
+					curatorsList.push(name);
+				}
+				if (j == data.length-1) {
+					document.getElementById("managersNumber").innerText = managersList.length;
+					document.getElementById("curatorsNumber").innerText = curatorsList.length;
 					document.getElementById("totalNumber").innerHTML = parseInt(document.getElementById("managersNumber").innerHTML) + parseInt(document.getElementById("curatorsNumber").innerHTML);
 				}
 				grabDelay = grabDelay + 1000;
