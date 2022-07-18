@@ -3,7 +3,7 @@ var curatorsList = [];
 var managersList = [];
 function getData(dataSet) {
 	var grabDelay = 0;
-	fetch("https://theforumhelperstest.herokuapp.com/api/users.php")
+	fetch("https://theforumhelpers.herokuapp.com//api/users.php")
 		.then(response => response.json())
 		.then(data => {
 			for (j = 0; j < data.length; j++) {
