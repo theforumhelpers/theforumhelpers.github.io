@@ -2,10 +2,10 @@ var referenceLink = "";
 function reference(link) {
 	referenceLink = link;
 	const headerContent = `
-	<a href="${link}" target="_parent">
+	<a href="${link}" target="_parent" class="headerHomeLink">
 		<img src="${link}resources/icon.png" width="64px" height="64px" class="navHomeIcon">
+		<h1 class="navTitle">The Forum Helpers</h1>
 	</a>
-	<h1 class="navTitle">The Forum Helpers</h1>
 	<a href="${link}apply" class="navButton">Apply</a>
 	<a href="${link}forumhelpers" class="navButton">List Of Forum Helpers</a>
 	<a href="https://scratch.mit.edu/studios/30136012/" class="navButton">Our Scratch Studio</a>
