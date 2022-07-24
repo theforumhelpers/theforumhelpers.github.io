@@ -27,11 +27,13 @@ function getData(dataSet) {
 					var section = document.getElementById("managersList").innerHTML;
 					document.getElementById("managersList").innerHTML = section + addition;
 					managersList.push(name);
+					document.getElementById("loadingManagersText").style.display = hidden;
 				}
 				else {
 					var section = document.getElementById("curatorsList").innerHTML;
 					document.getElementById("curatorsList").innerHTML = section + addition;
 					curatorsList.push(name);
+					document.getElementById("loadingCuratorsText").style.display = hidden;
 				}
 				if (j == data.length-1) {
 					document.getElementById("managersNumber").innerText = managersList.length;
