@@ -37,6 +37,10 @@ function getData(dataSet) {
 					document.getElementById("managersNumber").innerText = managersList.length;
 					document.getElementById("curatorsNumber").innerText = curatorsList.length;
 					document.getElementById("totalNumber").innerHTML = parseInt(document.getElementById("managersNumber").innerHTML) + parseInt(document.getElementById("curatorsNumber").innerHTML);
+					var loadingHide = document.getElementsByClassName("listLoading");
+					for (i = 0; i < loadingHide.length; i++) {
+						loadingHide[i].style.display = "none";
+					}
 				}
 				grabDelay = grabDelay + 1000;
 				getOcular(name);
