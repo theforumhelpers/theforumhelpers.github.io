@@ -16,7 +16,7 @@ function getData(dataSet) {
 				<div class="profileContainer" id="${name.toUpperCase()}">
 					<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
 					<div class="profileInner">
-						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://cdn2.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
+						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
 						<p class="profileBio">${bio}</p>
 					</div>
 					<p class="ocularStatusBox" id="${name}Ocular" title="Ocular Status"><span class="ocularStatus" id="${name}Status">Loading Status...</span></p>
