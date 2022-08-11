@@ -70,13 +70,13 @@ a {
 	text-decoration: underline;
 }
 
-a:visited:not(.navButton):visited {
+a:visited:not(.navButton, .headerHomeLink):visited {
 	color: inherit;
 	background-color: inherit;
 	text-decoration: underline;
 }
 
-a:hover:not(.navButton):hover {
+a:hover:not(.navButton, .headerHomeLink):hover {
 	color: var(--linkHover);
 	background-color: inherit;
 	text-decoration: underline;
@@ -117,7 +117,7 @@ header {
 
 .navTitle {
 	float: left;
-	width: 37.5%;
+	max-width: 37.5%;
 	min-width: 180px;
 	box-sizing: border-box;
 	height: 100%;
