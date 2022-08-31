@@ -14,7 +14,11 @@ function getData(dataSet) {
 				var role = data[j].role;
 				var addition = `
 				<div class="profileContainer" id="${name.toUpperCase()}">
-					<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
+					<div class="profileTop">
+						<h4 class="profileName"><a href="https://scratch.mit.edu/users/${name}/">${name}</a><span id="${name}Posts"></span></h4>
+						<div class="badgeBlock" id="${name}BadgeBlock"></div>
+					</div>
+
 					<div class="profileInner">
 						<a href="https://scratch.mit.edu/users/${name}/"><img src="https://uploads.scratch.mit.edu/get_image/user/${id}_60x60.png" class="profilePicture" id="${name}pfp" loading="lazy" alt="${name}'s Profile Picture"></a>
 						<p class="profileBio">${bio}</p>
@@ -45,6 +49,7 @@ function getData(dataSet) {
 				grabDelay = grabDelay + 1000;
 				getOcular(name);
 				setTimeout(getCount, grabDelay, name);
+				addBadges(name);
 			}
 		});
 
@@ -78,6 +83,19 @@ function getCount(name) {
 			var posts = data.counts.total.count;
 			document.getElementById(name+"Posts").innerText = " - "+posts+" Posts";
 		});
+}
+
+function addBadges(name) {
+	var badgeBlock = document.getElementById(name+"BadgeBlock");
+	if (memberDashboardAdmins.includes(name)) {
+		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/admin.png" class="memberBadge" width="32px" height="32px" title="Dashboard Admin">';
+	}
+	if (memberSiteContributor.includes(name)) {
+		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/coder.png" class="memberBadge" width="32px" height="32px" title="Site Contributer">';
+	}
+	if (memberOriginalStudio.includes(name)) {
+		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/original.png" class="memberBadge" width="32px" height="32px" title="Original Studio Member">';
+	}
 }
 
 

@@ -329,6 +329,14 @@ hr {
 	background-color: var(--secondaryHover);
 }
 
+.badgeLegendTitle {
+	margin-bottom: 10px;
+}
+
+.badgeLegendTitle:hover {
+	cursor: pointer;
+}
+
 .forumHelpersHeader {
 	text-align: center;
 }
@@ -345,8 +353,26 @@ hr {
 	min-height: 130px;
 }
 
+.profileTop {
+	height: 48px;
+	display: table;
+	border-spacing: 10px 0px;
+}
+
 .profileName {
 	font-family: Arial, sans-serif;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.badgeBlock {
+	display: table-cell;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.memberBadge {
+	padding-right: 5px;
 }
 
 .profileInner {
