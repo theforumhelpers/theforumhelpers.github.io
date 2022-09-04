@@ -31,6 +31,15 @@
 
 		<br>
 
+		<details class="badgeLegend">
+			<summary class="badgeLegendTitle"><span style="font-size: 18px; font-weight: 700;">Badge Legend</span></summary>
+			<img src="../resources/admin.png" class="memberBadge" width="32px" height="32px" title="Dashboard Admin"> indicates a Forum Helpers Dashboard Admin.<br><br>
+			<img src="../resources/coder.png" class="memberBadge" width="32px" height="32px" title="Site Contributor"> indicates a site contributor.<br><br>
+			<img src="../resources/original.png" class="memberBadge" width="32px" height="32px" title="Original studio member"> indicates a member of the original studio.
+		</details>
+
+		<br>
+
 		<div class="searchBlock">
 			<h3>Search for a Forum Helper</h3>
 			<input type="text" id="searchBar" placeholder="Username" oninput="checkUser(), updateUserChoice()" onkeydown="if (event.keyCode == 13); document.getElementById('searchButton').click()">
@@ -60,6 +69,7 @@
 	<footer id="footer"></footer>
 	<script src="../resources/imports.js" onload='reference("../")'></script>
 	<script src="../resources/theme.js"></script>
+	<script src="../resources/memberData.js"></script>
 	<script src="FHP.js"></script>
 	</body>
 </html>
