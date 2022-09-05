@@ -91,7 +91,7 @@ function addBadges(name) {
 		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/admin.png" class="memberBadge" width="32px" height="32px" title="Dashboard Admin">';
 	}
 	if (memberSiteContributor.includes(name)) {
-		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/coder.png" class="memberBadge" width="32px" height="32px" title="Site Contributer">';
+		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/coder.png" class="memberBadge" width="32px" height="32px" title="Site Contributor">';
 	}
 	if (memberOriginalStudio.includes(name)) {
 		badgeBlock.innerHTML = badgeBlock.innerHTML + '<img src="../resources/original.png" class="memberBadge" width="32px" height="32px" title="Original Studio Member">';
