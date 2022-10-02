@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<script defer src="./script.js"></script>
+	<title>TFH-Form</title>
+</head>
+
+<body>
+
+	<h1>Application Form</h1>
+	<div class="form subforums">
+		<p class="form-desc">Please enter your username</p>
+		<label for="username">Username: </label><input type="text" id="username" class="post">
+	</div>
+
+	<div class="form subforums">
+		<p class="form-desc">Which subforums are you most active in?</p>
+		<input type="checkbox" id="suggestions">
+		<label for="Suggestions">Suggestions</label>
+		<br>
+
+		<input type="checkbox" id="ats">
+		<label for="Suggestions">Advanced Topics</label>
+		<br>
+
+		<input type="checkbox" id="qas">
+		<label for="Suggestions">Questions About Scratch</label>
+		<br>
+
+		<input type="checkbox" id="hws">
+		<label for="Suggestions">Help With Scripts</label>
+		<br>
+	</div>
+
+	<div class="form posts">
+		<p class="form-desc">Provide links to 2 - 4 posts you made that you find the most constructive. (NOTE: They must
+			NOT be a Sticky, iTopic, or any kind of guide)</p>
+		<p class="small">Do not submit posts in your application that were made in the Collaborations, Requests, Project
+			Ideas, Things I'm Making and Creating, Things I'm Reading and Playing, New Scratchers, or Announcements
+			forums. <br>
+			To get the link for a post, right click on the post date on the top left corner of the post and
+			click "Copy Link"</p>
+		</p>
+		<label>Post #1</label><input type="text" class="post post-id"><br>
+		<label>Post #2</label><input type="text" class="post post-id"><br>
+		<label>Post #3</label><input type="text" class="post post-id"><br>
+		<label>Post #4</label><input type="text" class="post post-id">
+	</div>
+
+	<div class="form recent">
+		<p class="form-desc">Provide a link to your most recent post.</p>
+		<label>Most recent</label><input type="text" class="post" id="recent"><br>
+		<p class="form-desc">Additional Information (optional)</p>
+		<textarea type="text" class="post" id="additional"></textarea><br>
+	</div>
+
+	<button id="create">Create Application</button>
+	<br>
+	<div class="result" style="display: none;">
+		<p class="form-desc">Copy paste everything below and post it as a new comment in TFH.</p>
+		<button id="create" class="copy">Copy</button><br><br>
+		<textarea id="result" class="post-desc" disabled></textarea>
+	</div>
+</body>
+
+</html>
