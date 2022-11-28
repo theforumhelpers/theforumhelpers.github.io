@@ -1,4 +1,4 @@
-fetch("https://theforumhelpers.herokuapp.com/api/status.php")
+fetch("https://theforumhelpers.github.io/apply/status.json")
 	.then(response => response.json())
 	.then(data => {
 		var applicationStatus = data.status;
